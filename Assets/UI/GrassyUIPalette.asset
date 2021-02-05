@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deebb03f08f41904aab82250d606285e, type: 3}
+  m_Name: GrassyUIPalette
+  m_EditorClassIdentifier: 
+  text: {r: 1, g: 1, b: 1, a: 1}
+  buttonOutline: {r: 0.121568635, g: 0.13725491, b: 0.27450982, a: 1}
+  buttonInside: {r: 0.36663404, g: 0.4035346, b: 0.7264151, a: 1}
+  buttonLockedOutline: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+  buttonLockedInside: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  starUnlocked: {r: 1, g: 0.8967229, b: 0.4481132, a: 1}
+  starLocked: {r: 0.5, g: 0.5, b: 0.5, a: 1}
