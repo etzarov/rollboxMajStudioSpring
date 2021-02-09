@@ -96,7 +96,10 @@ public class CurrentLevelManager : MonoBehaviour
         if (!levelComplete)
         {
             totalCratesDropped++;
-            TopLevelUI.main.UpdateCrateCount();
+            if (TopLevelUI.main != null)
+            {
+                TopLevelUI.main.UpdateCrateCount();
+            }
         }
     }
 
@@ -157,7 +160,6 @@ public class CurrentLevelManager : MonoBehaviour
         lSaveData.cratesDropped = droppedCrates;
         lSaveData.completed = completed;
 
-        print("saved");
         ES3.Save<LevelSaveData>(saveString, lSaveData);
     }
 

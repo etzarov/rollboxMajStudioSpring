@@ -21,7 +21,7 @@ public class CraneManagement : MonoBehaviour
     Vector3 inputPosition;
     [Space]
     [Header("Claw Management")]
-
+    public float angleLimit;
     
     public float distanceToChainEnd = .6f; //Distance to the hinge joint.
     Rigidbody2D clawRB;
@@ -50,7 +50,7 @@ public class CraneManagement : MonoBehaviour
     public bool firstCratePlayer;
     [Space]
     public Transform crateHolder;
-    List<CrateInfo> allDroppedCrates;
+    public List<CrateInfo> allDroppedCrates;
 
     public GameObject[] crateObjs;
     public GameObject playerCrateObj;
@@ -74,6 +74,15 @@ public class CraneManagement : MonoBehaviour
     {
         clawRB = GetComponent<Rigidbody2D>();
         allDroppedCrates = new List<CrateInfo>();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(new Vector3(craneXBounds.x, transform.position.y, 0), .1f);
+        Gizmos.DrawWireSphere(new Vector3(craneXBounds.y, transform.position.y, 0), .1f);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(new Vector3(craneXBounds.x, transform.position.y, 0), new Vector3(craneXBounds.y, transform.position.y, 0));
     }
 
     private void Update()
@@ -113,8 +122,8 @@ public class CraneManagement : MonoBehaviour
         joint.anchor = Vector2.zero;
         joint.useLimits = true;
         JointAngleLimits2D angleLimits = joint.limits;
-        angleLimits.min = -20;
-        angleLimits.max = 20;
+        angleLimits.min = -angleLimit;
+        angleLimits.max = angleLimit;
         joint.limits = angleLimits;
         joint.connectedAnchor = new Vector2(0f, -distanceToChainEnd);
     }
