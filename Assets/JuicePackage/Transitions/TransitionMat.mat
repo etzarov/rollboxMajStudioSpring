@@ -102,7 +102,14 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.10588236, g: 0.121568635, b: 0.227451, a: 1}
+<<<<<<< HEAD
     - _NoiseTiling: {r: 3.9989572, g: 2.5, b: 0, a: 0}
     - _TransitionColor1: {r: 0.23529413, g: 0.31764707, b: 0.39607847, a: 1}
     - _TransitionColor2: {r: 0.22352943, g: 0.4901961, b: 0.5803922, a: 1}
     - _TransitionColor3: {r: 0.654902, g: 0.8117648, b: 0.85098046, a: 1}
+=======
+    - _NoiseTiling: {r: 4.708738, g: 2.5, b: 0, a: 0}
+    - _TransitionColor1: {r: 0.6039216, g: 0.41176474, b: 0.3019608, a: 1}
+    - _TransitionColor2: {r: 0.19215688, g: 0.5254902, b: 0.25882354, a: 1}
+    - _TransitionColor3: {r: 0.43921572, g: 0.69803923, b: 0.2901961, a: 1}
+>>>>>>> 145d19889e34e38aeefcf1631ddd1ae13c83153f
