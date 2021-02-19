@@ -154,8 +154,6 @@ MonoBehaviour:
   ropeLinkObj: {fileID: 6673431452611824321, guid: eac7b78d1fa03f044893a2377830f7e1,
     type: 3}
   craneManagement: {fileID: 6014837373940854825}
-  angularDragDefault: 80
-  ropeLimitDefault: 2
   linkCount: 7
 --- !u!1 &6014837373319228453
 GameObject:
@@ -367,9 +365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usesKeyboardControl: 0
-  dropDisabled: 0
-  isMenuCrane: 0
-  angleLimit: 5
   distanceToChainEnd: 0
   craneXBounds: {x: -8.3, y: 8.3}
   craneLerpSpeed: 0.15
@@ -405,8 +400,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 15
-  m_LinearDrag: 20
-  m_AngularDrag: 20
+  m_LinearDrag: 2
+  m_AngularDrag: 4
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
