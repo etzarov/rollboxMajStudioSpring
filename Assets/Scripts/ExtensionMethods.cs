@@ -141,48 +141,6 @@ public static class ExtensionMethods
             touchP = Vector3.zero;
         }
     }
-    /// <summary>PC/Mobile compatible, returns whether touched on a given frame and its touch position.</summary>
-    /// <param name="touched">Returns whether pressed on the given frame.</param>
-    /// <param name="touchP">Returns position of touch.</param>
-    public static void DetectTouches(out bool touched, out Vector3 touchP, Camera usedCam)
-    {
-        if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
-        {
-            bool pressedFrame = false;
-            Vector3 touchPos = Vector3.zero;
-            if (Input.touchCount > 0)
-            {
-                Touch touch = Input.GetTouch(0);
-                if (touch.phase == TouchPhase.Began)
-                {
-                    touchPos = usedCam.ScreenToWorldPoint(touch.position);
-                    pressedFrame = true;
-                }
-            }
-            else
-            {
-                touchPos = usedCam.ScreenToWorldPoint(Input.mousePosition);
-                pressedFrame = true;
-            }
-
-            if (pressedFrame)
-            {
-                touchPos.z = 0;
-                touched = true;
-                touchP = touchPos;
-            }
-            else
-            {
-                touched = false;
-                touchP = Vector3.zero;
-            }
-        }
-        else
-        {
-            touched = false;
-            touchP = Vector3.zero;
-        }
-    }
     /// <summary>PC/Mobile compatible, returns when touched/held down and its touch position.</summary>
     /// <param name="touchHeld">Returns whether press is being held.</param>
     /// <param name="touchBegan">Returns whether pressed on the given frame.</param>
