@@ -90,7 +90,7 @@ Material:
     - _NoiseTime: 1
     - _NormalStrength: 1.63
     - _OcclusionStrength: 1
-    - _OutlineOpacity: 0
+    - _OutlineOpacity: 0.49
     - _Parallax: 0.02
     - _RefractionScale: 0.45
     - _RefractionStrength: 4.04
@@ -99,8 +99,8 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _WaterFadeDistance: 0.007
-    - _WaterFlowX: -0
-    - _WaterLine: 0.3185788
+    - _WaterFlowX: -1.5
+    - _WaterLine: 0.30985898
     - _WaterOpaqueness: 0.341
     - _ZWrite: 1
     - __dirty: 0
