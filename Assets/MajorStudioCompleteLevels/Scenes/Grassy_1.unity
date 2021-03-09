@@ -1213,6 +1213,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Current Level Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 8551822938491101502, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
+        type: 3}
+      propertyPath: thisLevel
+      value: 
+      objectReference: {fileID: 11400000, guid: 6218028e8b08d4b42a0a7f8348008fa3,
+        type: 2}
     - target: {fileID: 8551822938491101503, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
         type: 3}
       propertyPath: m_RootOrder
