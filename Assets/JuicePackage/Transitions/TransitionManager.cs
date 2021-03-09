@@ -132,6 +132,5 @@ public class TransitionManager : MonoBehaviour
 
                 StartCoroutine(StartTransition());
             }
- 
     }
 }
