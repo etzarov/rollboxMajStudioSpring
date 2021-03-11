@@ -69,6 +69,10 @@ public class CurrentLevelManager : MonoBehaviour
             CraneManagement.main.ClearAllCrates();
         }
 
+        if (CrateSpawner.main != null) {
+            CrateSpawner.main.ResetCrates();
+        }
+
         if (PlayerManager.main != null)
         {
             PlayerManager.main.ResetPlayer();
