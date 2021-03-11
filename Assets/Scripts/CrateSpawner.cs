@@ -18,6 +18,7 @@ public class CrateSpawner : MonoBehaviour
     [Tooltip("Crates that are already in the scene on level load. Allows them to revert to original positions")]
     [SerializeField] private CrateInfo[] initialCrates;
     private Vector2[] initialPositions;
+    private Quaternion[] initialRotation;
     private bool[] initialCratesDisabled;
 
     [Header("Spawn Settings")]
@@ -26,7 +27,7 @@ public class CrateSpawner : MonoBehaviour
     private float timeLeftToSpawn;
     [Tooltip("Whenever a crate can be dropped, it will follow the current mouse position.")]
     [SerializeField] private bool alwaysHoldCrate = false;
-    [SerializeField] [Range(0, 1)] private float heldCrateSensitivity;
+    [SerializeField] [Range(0, 3)] private float heldCrateSensitivity;
     [SerializeField] private Transform breakCrateXTransform;
     private SpriteRenderer breakCrateXSR;
     private CrateInfo heldCrate;
@@ -87,10 +88,13 @@ public class CrateSpawner : MonoBehaviour
         allDroppedCrates = new List<CrateInfo>();
 
         initialPositions = new Vector2[initialCrates.Length];
+        initialRotation = new Quaternion[initialCrates.Length];
+        initialRotation = new Quaternion[initialCrates.Length];
         initialCratesDisabled = new bool[initialCrates.Length];
         for (int i = 0; i < initialCrates.Length; i++)
         {
             initialPositions[i] = initialCrates[i].transform.position;
+            initialRotation[i] = initialCrates[i].transform.rotation;
         }
     }
 
@@ -179,7 +183,7 @@ public class CrateSpawner : MonoBehaviour
 
         heldCrate = newCrate.GetComponent<CrateInfo>();
         heldCrateRB = heldCrate.GetComponent<Rigidbody2D>();
-        heldCrateRB.angularVelocity = 10;
+        heldCrateRB.angularDrag = 100;
         heldCrateRB.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         heldCrateSR = heldCrate.GetComponentInChildren<SpriteRenderer>();
         heldCrateSR.color = new Color(1, 1, 1, .4f);
@@ -200,7 +204,7 @@ public class CrateSpawner : MonoBehaviour
         heldCrate.gameObject.layer = 9; ///Sets layer back to being with other crates.
         allDroppedCrates.Add(heldCrate);
         heldCrateSR.color = Color.white;
-        heldCrateRB.angularVelocity = 0.05f;
+        heldCrateRB.angularDrag = 0.05f;
 
         heldCrate = null;
         heldCrateRB = null;
@@ -294,6 +298,7 @@ public class CrateSpawner : MonoBehaviour
         int index = GetCrateIndex(crate);
         initialCratesDisabled[index] = false;
         crate.transform.position = initialPositions[index];
+        crate.transform.rotation = initialRotation[index];
     }
 
     /// <summary>
