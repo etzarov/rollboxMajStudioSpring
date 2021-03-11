@@ -1998,12 +1998,12 @@ PrefabInstance:
     - target: {fileID: 9222601502702408336, guid: d92c2b8e5ed0f354fb6150fa25b8a610,
         type: 3}
       propertyPath: timeToCompleteLevel
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9222601502702408336, guid: d92c2b8e5ed0f354fb6150fa25b8a610,
         type: 3}
       propertyPath: maxSpeedToCompleteLevel
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9222601502702408340, guid: d92c2b8e5ed0f354fb6150fa25b8a610,
         type: 3}

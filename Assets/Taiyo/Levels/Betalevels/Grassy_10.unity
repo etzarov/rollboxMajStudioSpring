@@ -1929,6 +1929,11 @@ PrefabInstance:
       propertyPath: alwaysHoldCrate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4653290115795039307, guid: 542fa2a8be6425f43906b54210b797bb,
+        type: 3}
+      propertyPath: sensitivityLerp
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542fa2a8be6425f43906b54210b797bb, type: 3}
 --- !u!1 &2027002761 stripped
