@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scripts/Scenes/LevelSelect.unity
-    guid: 6eb0d7982dc32674fac96003e681242f
-  - enabled: 1
     path: Assets/Taiyo/Scenes/StageSelectForNow.unity
     guid: 7b362d6dac57af142a8af60ed75c785c
+  - enabled: 1
+    path: Assets/Scripts/Scenes/LevelSelect.unity
+    guid: 6eb0d7982dc32674fac96003e681242f
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -70,17 +70,32 @@ EditorBuildSettings:
     guid: e9055d2fbd78d614b8f93d569079ef5c
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_2.unity
-    guid: 618425b5c8bde794f83db5d184c5c260
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_3.unity
     guid: e2b2ebabe455aa34c81a7c0e7b564042
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_4.unity
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_3.unity
     guid: 75b904e55c69b734faaafe5d1c37a3b6
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_4.unity
+    guid: 288196ffcaa51404faf89b1aceb6f145
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_5.unity
     guid: 3db3b22b0ab19414eb0461ce4927cd03
   - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_6.unity
+    guid: 8661f611cbfbecd4da9a0840fc8ce177
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_7.unity
+    guid: 3f6d6d3d23d5baa44b3877a57269c88e
+  - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_8.unity
     guid: bf432c01eb6211f42ae0f37877ba3711
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_9.unity
+    guid: 421cca9679f73b5409ff0b5fefdca3c0
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_10.unity
+    guid: 2e77363d465d2274ba7ae88c85444dfd
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_4_2.unity
+    guid: 618425b5c8bde794f83db5d184c5c260
   m_configObjects: {}
