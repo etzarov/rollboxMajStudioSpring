@@ -76,7 +76,7 @@ public class LevelSelectManager : MonoBehaviour
                 {
                     if (allGrassyLevels[i].unlocked)
                     {
-                        TransitionManager.main.Transition();
+                        //TransitionManager.main.Transition();
                         SceneManager.LoadScene(allGrassyLevels[i].levelToTravelTo.buildSceneNumber);
                         break;
                     }

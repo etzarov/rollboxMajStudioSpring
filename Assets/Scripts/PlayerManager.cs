@@ -36,10 +36,11 @@ public class PlayerManager : MonoBehaviour
 
     public void ResetPlayer()
     {
+        /*
         if (CraneManagement.main.firstCratePlayer)
         {
             Destroy(this.gameObject);
-        }
+        }*/
         rb.position = initPos;
         rb.angularVelocity = 0;
         rb.velocity = Vector3.zero;
