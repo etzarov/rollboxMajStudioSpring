@@ -64,4 +64,11 @@ public class CrateInfo : MonoBehaviour
             SFXManager.main.CrateHitSound(magStore);
         }
     }
+
+
+    //Added by Taiyo Baniecki for TNT Crate Explosion
+    public void DestroySelf()
+    {
+        Destroy(this.gameObject);
+    }
 }
