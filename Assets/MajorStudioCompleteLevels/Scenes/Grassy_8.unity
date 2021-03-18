@@ -12793,17 +12793,17 @@ PrefabInstance:
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
       propertyPath: PlatEnd.x
-      value: -6.89
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
       propertyPath: PlatEnd.y
-      value: 0.89
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
@@ -12818,7 +12818,7 @@ PrefabInstance:
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
       propertyPath: PlatStart.y
-      value: 1.48
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
@@ -12838,7 +12838,7 @@ PrefabInstance:
     - target: {fileID: 1726601871029623975, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.48
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623975, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
         type: 3}
@@ -13977,7 +13977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76658520b2c2b1740a8b47b9f0410486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisLevel: {fileID: 11400000, guid: 06edc0f90b64e416caedb00d227b0b45, type: 2}
+  thisLevel: {fileID: 11400000, guid: 3f83c93d71c42224dbed6a0a724d6799, type: 2}
   generalPalette: {fileID: 11400000, guid: 7497609d37f422b44912eb40272449d4, type: 2}
   totalCratesDropped: 0
   mustReset: 0

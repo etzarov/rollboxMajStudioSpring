@@ -17,6 +17,13 @@ public class TNTScript : MonoBehaviour
     public ParticleSystem explosion1;
     public ParticleSystem explosion2;
 
+
+
+    //Added by Taiyo Baniecki
+
+    //The max distance which the objects will get destroyed by TNT     
+    [Range(1,10)][SerializeField] private float explodeDistance = 2.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +47,9 @@ public class TNTScript : MonoBehaviour
                 {
                     SFXManager.main.TNTExplode();
                 }
-                CraneManagement.main.LaunchCrates(this.transform.position, power);
+                //CraneManagement.main.LaunchCrates(this.transform.position, power);
+                Launch(power);
+                DestoryWhenExplode(explodeDistance);
                 explosion1.Play();
                 explosion2.Play();
                 //Destroy(this.gameObject);
@@ -51,6 +60,51 @@ public class TNTScript : MonoBehaviour
         }
     }
 
+    public void Launch(float power)
+    {
+        Vector2 baseVal = new Vector2(1, 1);
+        Vector2 distPL = PlayerManager.main.transform.position - this.transform.position;
+        PlayerManager.main.rb.AddForce(power * distPL.normalized / Mathf.Pow(distPL.magnitude, 2f), ForceMode2D.Impulse);
+    }
+
+    /// <summary>
+    /// Destory objects with certain tags
+    /// when it is within the range of dist
+    /// </summary>
+    /// <param name="dist"></param>
+    public void DestoryWhenExplode(float dist)
+    {
+        //For crate deletion
+        CrateInfo[] cos;
+        cos = Resources.FindObjectsOfTypeAll(typeof(CrateInfo)) as CrateInfo[];
+
+        Vector3 p = this.transform.position;
+
+        foreach(CrateInfo co in cos)
+        {
+            if (Vector3.Distance(co.transform.position,p) < dist)
+            {
+                co.BreakCrate(false);
+                co.DestroySelf();
+            }
+        }
+
+
+
+        //For elevator deletion
+        ElevatorScript[] eos;
+        eos = Resources.FindObjectsOfTypeAll(typeof(ElevatorScript)) as ElevatorScript[];
+
+        foreach (ElevatorScript eo in eos)
+        {
+            if (Vector3.Distance(eo.transform.position, p) < dist)
+            {
+                eo.DestroySelf();
+            }
+        }
+
+        //TODO : Add cactus deletion
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Rigidbody2D collisionRB = collision.gameObject.GetComponent<Rigidbody2D>();

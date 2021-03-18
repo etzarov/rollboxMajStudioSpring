@@ -271,6 +271,41 @@ public class CrateSpawner : MonoBehaviour
     }
 
     /// <summary>
+    /// Breaks the desired crate.
+    /// </summary>
+    /// <param name="crate">Crate to break.</param>
+    public void BreakCrate(CrateInfo crate)
+    {
+        bool initCrate = true;
+        for (int i = 0; i < allDroppedCrates.Count; i++)
+        {
+            if (allDroppedCrates[i] == crate)
+            {
+                initCrate = true;
+                break;
+            }
+        }
+
+        crate.BreakCrate(false);
+
+        if (initCrate)
+        {
+            Destroy(crate.gameObject);
+            allDroppedCrates.Remove(crate);
+        }
+        else
+        {
+            DisableCrate(crate);
+        }
+
+        //Sound
+        if (SFXManager.main)
+        {
+            SFXManager.main.CrateBreakSound();
+        }
+    }
+
+    /// <summary>
     /// Gets the index of a crate in its specified array.
     /// </summary>
     /// <param name="crate">Crate to get the index of.</param>
