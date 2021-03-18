@@ -8,7 +8,7 @@ public class LevelSelectManager : MonoBehaviour
     public static LevelSelectManager main;
 
     [Header("Level Select")]
-    public LevelSelectButton[] allGrassyLevels;
+    public LevelSelectButton[] allLevels;
     [Header("Level Select Palettes")]
     public Palette grassyPalette;
     [Space]
@@ -40,9 +40,9 @@ public class LevelSelectManager : MonoBehaviour
         
 
         int levelNo = 1;
-        for (int i = 0; i < allGrassyLevels.Length; i++)
+        for (int i = 0; i < allLevels.Length; i++)
         {
-            allGrassyLevels[i].UpdateDisplay(grassyPalette,levelNo);
+            allLevels[i].UpdateDisplay(grassyPalette,levelNo);
             levelNo++;
         }
     }
@@ -54,11 +54,11 @@ public class LevelSelectManager : MonoBehaviour
     void UpdateUnlocks()
     {
         bool previousCompleted = true;
-        for (int i = 0; i < allGrassyLevels.Length; i++)
+        for (int i = 0; i < allLevels.Length; i++)
         {
-            allGrassyLevels[i].unlocked = previousCompleted;
+            allLevels[i].unlocked = previousCompleted;
 
-            previousCompleted = allGrassyLevels[i].levelToTravelTo.levelCompletionData.completed;
+            previousCompleted = allLevels[i].levelToTravelTo.levelCompletionData.completed;
         }
     }
 
@@ -70,14 +70,14 @@ public class LevelSelectManager : MonoBehaviour
 
         if (pressed)
         {
-            for (int i = 0; i < allGrassyLevels.Length; i++)
+            for (int i = 0; i < allLevels.Length; i++)
             {
-                if (ExtensionMethods.TouchedHitbox(allGrassyLevels[i].touchHitbox, touchPos))
+                if (ExtensionMethods.TouchedHitbox(allLevels[i].touchHitbox, touchPos))
                 {
-                    if (allGrassyLevels[i].unlocked)
+                    if (allLevels[i].unlocked)
                     {
                         //TransitionManager.main.Transition();
-                        SceneManager.LoadScene(allGrassyLevels[i].levelToTravelTo.buildSceneNumber);
+                        SceneManager.LoadScene(allLevels[i].levelToTravelTo.buildSceneNumber);
                         break;
                     }
                 }
@@ -88,7 +88,7 @@ public class LevelSelectManager : MonoBehaviour
 
     public void LoadData(bool shouldSave)
     {
-        foreach (LevelSelectButton levelSelect in allGrassyLevels)
+        foreach (LevelSelectButton levelSelect in allLevels)
         {
             LevelSelectInfo lSelect = levelSelect.levelToTravelTo;
             string loadString = "LevelData_" + lSelect.buildSceneNumber.ToString();
@@ -131,13 +131,22 @@ public class LevelSelectManager : MonoBehaviour
 
     void GenerateLineConnectors()
     {
-        int totalLevels = allGrassyLevels.Length;
+        int totalLevels = allLevels.Length;
         lineRenderer.positionCount = totalLevels;
-        for (int i = 0; i < allGrassyLevels.Length; i++)
+        for (int i = 0; i < allLevels.Length; i++)
         {
-            Vector3 tPos = allGrassyLevels[i].transform.position;
+            Vector3 tPos = allLevels[i].transform.position;
             tPos.z = .1f;
             lineRenderer.SetPosition(i, tPos);
         }
     }
+
 }
+
+
+//[System.Serializable]
+//public class ProgressionBarricade
+//{
+//    int levelNumberBarricaded;
+//    int totalStarsRequiredToProgress;
+//}
