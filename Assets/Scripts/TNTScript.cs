@@ -72,6 +72,7 @@ public class TNTScript : MonoBehaviour
     /// when it is within the range of dist
     /// </summary>
     /// <param name="dist"></param>
+
     public void DestoryWhenExplode(float dist)
     {
         //For crate deletion
