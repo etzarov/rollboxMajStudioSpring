@@ -30,6 +30,11 @@ public class CactusScript : MonoBehaviour
             }
         }
 
+        if(collision.gameObject.layer == 12)
+        {
+            CurrentLevelManager.main.ResetGame();
+        }
+
     }
 
 
