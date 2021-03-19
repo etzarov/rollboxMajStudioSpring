@@ -95,13 +95,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_9.unity
     guid: 421cca9679f73b5409ff0b5fefdca3c0
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_10.unity
-    guid: 2e77363d465d2274ba7ae88c85444dfd
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_4_B.unity
     guid: 979db1342bdd05b45a28cd86bb7327c5
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_2.unity
+    guid: 5cdf07a643529c94ca648cb6782ae663
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_3.unity
+    guid: fdd9e547b78297a4cb0a2c0a8c6619b7
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
+    guid: e737a01955e79b84284a2b872560ff18
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_6.unity
+    guid: 00686a50c9ce13b4e9d19bc7c747290a
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_10.unity
+    guid: a7244dd56c50278419d31974a187e61a
   m_configObjects: {}
