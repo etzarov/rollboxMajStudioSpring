@@ -823,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 1726601871029623973, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
       propertyPath: PlatStart.y
-      value: 0.75
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
@@ -843,7 +843,7 @@ PrefabInstance:
     - target: {fileID: 1726601871029623975, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623975, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
@@ -3252,7 +3252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  maxSpeedToCompleteLevel: 0.35
+  maxSpeedToCompleteLevel: 10
   timeToCompleteLevel: 0
 --- !u!50 &6474111631230929636
 Rigidbody2D:
