@@ -197,7 +197,7 @@ MonoBehaviour:
   touchHitbox: {fileID: 1312139011964895468}
   breakEffects:
   - {fileID: 5272635816127130248, guid: aedb4450a48d1864492866171f2208c8, type: 3}
-  holdingPlayer: 1
+  holdingPlayer: 0
   playerObj: {fileID: 9222601502702408347, guid: d92c2b8e5ed0f354fb6150fa25b8a610,
     type: 3}
 --- !u!114 &3872665379156693587
