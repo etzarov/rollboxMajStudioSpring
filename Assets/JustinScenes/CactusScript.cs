@@ -31,4 +31,11 @@ public class CactusScript : MonoBehaviour
         }
 
     }
+
+
+    //Added by Taiyo Baniecki for TNT Crate Explosion
+    public void DestroySelf()
+    {
+        Destroy(this.gameObject);
+    }
 }

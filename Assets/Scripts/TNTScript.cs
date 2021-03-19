@@ -72,6 +72,7 @@ public class TNTScript : MonoBehaviour
     /// when it is within the range of dist
     /// </summary>
     /// <param name="dist"></param>
+
     public void DestoryWhenExplode(float dist)
     {
         //For crate deletion
@@ -104,6 +105,16 @@ public class TNTScript : MonoBehaviour
         }
 
         //TODO : Add cactus deletion
+        CactusScript[] cs;
+        cs = Resources.FindObjectsOfTypeAll(typeof(CactusScript)) as CactusScript[];
+
+        foreach (CactusScript c in cs)
+        {
+            if (Vector3.Distance(c.transform.position, p) < dist)
+            {
+                c.DestroySelf();
+            }
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
