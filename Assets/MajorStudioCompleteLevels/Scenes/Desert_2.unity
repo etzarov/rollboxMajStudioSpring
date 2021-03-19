@@ -430,6 +430,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.7851568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.6143818
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.006771624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.037888974
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851585, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_Name
@@ -440,6 +470,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eac3c5e0f1477064e9683134b58eb918,
+        type: 3}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_RootOrder
@@ -447,13 +483,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.95161724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.95161724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.95161724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.05
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.12
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -673,7 +724,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.6226415, g: 0.54598856, b: 0.49047703, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

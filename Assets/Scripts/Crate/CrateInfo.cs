@@ -47,11 +47,15 @@ public class CrateInfo : MonoBehaviour
         }
         else
         {
+            if(this == null)
+            {
+                return;
+            }
             GameObject crateBreak = Instantiate(breakEffects[Random.Range(0, breakEffects.Length)], transform.position, transform.rotation, null);
             crateBreak.transform.localScale = transform.lossyScale;
             if (holdingPlayer)
             {
-                Instantiate(playerObj, transform.position, Quaternion.identity);
+                //Instantiate(playerObj, transform.position, Quaternion.identity);
             }
         }
         
