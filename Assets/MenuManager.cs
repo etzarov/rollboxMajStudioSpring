@@ -79,18 +79,17 @@ public class MenuManager : MonoBehaviour
         {
             if (settingsButton.buttonPressed)
             {
-                CraneManagement.main.dropDisabled = true;
-
+                CrateSpawner.main.dropDisabled = true;
                 targetState = MenuState.Settings;
             }
             else if (playButton.buttonPressed)
             {
-                CraneManagement.main.dropDisabled = true;
+                CrateSpawner.main.dropDisabled = true;
                 targetState = MenuState.LevelSelect;
             }
             else if (customizeButton.buttonPressed)
             {
-                CraneManagement.main.dropDisabled = true;
+                CrateSpawner.main.dropDisabled = true;
 
                 targetState = MenuState.Customize;
             }
@@ -203,12 +202,16 @@ public class MenuManager : MonoBehaviour
             t += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-        CraneManagement.main.ClearAllCrates();
+        if (CrateSpawner.main)
+        {
+            CrateSpawner.main.ResetCrates();
+        }
+
         Camera.main.transform.position = targetCameraPos;
         inStateChange = false;
         if (newState == MenuState.MainScreen)
         {
-            CraneManagement.main.dropDisabled = false;
+            CrateSpawner.main.dropDisabled = false;
         }
         yield return null;
     }

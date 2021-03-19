@@ -115,6 +115,12 @@ public class ElevatorScript : MonoBehaviour
         }
         PlatEnd = rb.position;
     }
+
+    //Added by Taiyo Baniecki for TNT Crate Explosion
+    public void DestroySelf()
+    {
+        Destroy(this.gameObject);
+    }
 }
 
 

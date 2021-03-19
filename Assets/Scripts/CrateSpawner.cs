@@ -34,6 +34,7 @@ public class CrateSpawner : MonoBehaviour
     private Rigidbody2D heldCrateRB;
     private SpriteRenderer heldCrateSR;
     private bool holdingCrate;
+    
 
 
     [Header("Input")]
@@ -50,6 +51,8 @@ public class CrateSpawner : MonoBehaviour
     //Input
     [HideInInspector] public Vector3 touchPos;
     [HideInInspector] public Vector3 mousePos;
+
+    [HideInInspector] public bool dropDisabled;
 
     private bool pressed;
     private const float touchSens = .6f;
@@ -116,7 +119,7 @@ public class CrateSpawner : MonoBehaviour
     /// </summary>
     void TouchToSpawnCrateInput()
     {
-        if (pressed)
+        if (pressed && !dropDisabled)
         {
             bool canSpawn = ValidTouchPosition(touchPos);
             bool isInitialCrate = false;
@@ -164,7 +167,7 @@ public class CrateSpawner : MonoBehaviour
             breakCrateXSR.enabled = false;
         }
 
-        if (pressed)
+        if (pressed && !dropDisabled)
         {
             if (touchedCrate) BreakCrate(touchedCrate, isInitialCrate);
             else if (validPosition) TryDropHeldCrate();
@@ -262,6 +265,41 @@ public class CrateSpawner : MonoBehaviour
             DisableCrate(crate);
         }
 
+
+        //Sound
+        if (SFXManager.main)
+        {
+            SFXManager.main.CrateBreakSound();
+        }
+    }
+
+    /// <summary>
+    /// Breaks the desired crate.
+    /// </summary>
+    /// <param name="crate">Crate to break.</param>
+    public void BreakCrate(CrateInfo crate)
+    {
+        bool initCrate = true;
+        for (int i = 0; i < allDroppedCrates.Count; i++)
+        {
+            if (allDroppedCrates[i] == crate)
+            {
+                initCrate = true;
+                break;
+            }
+        }
+
+        crate.BreakCrate(false);
+
+        if (initCrate)
+        {
+            Destroy(crate.gameObject);
+            allDroppedCrates.Remove(crate);
+        }
+        else
+        {
+            DisableCrate(crate);
+        }
 
         //Sound
         if (SFXManager.main)
