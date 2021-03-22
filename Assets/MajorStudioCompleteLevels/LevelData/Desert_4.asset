@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036e02ac442ed447aa00e1d13aa7b95, type: 3}
   m_Name: Desert_4
   m_EditorClassIdentifier: 
-  buildSceneNumber: 30
+  buildSceneNumber: 19
   nextLevel: {fileID: 11400000, guid: 6218028e8b08d4b42a0a7f8348008fa3, type: 2}
   maxCratesFor3Stars: 1
   maxCratesFor2Stars: 2
   levelCompletionData:
-    completed: 0
+    completed: 1
     cratesUsed: 0
-    earnedStars: 0
+    earnedStars: 3
