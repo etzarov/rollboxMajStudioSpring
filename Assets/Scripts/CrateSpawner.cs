@@ -203,6 +203,10 @@ public class CrateSpawner : MonoBehaviour
     {
         if (timeLeftToSpawn > 0) return;
         if (!heldCrate) return;
+        if (CurrentLevelManager.main != null)
+        {
+            CurrentLevelManager.main.AddCrate();
+        }
         heldCrate.transform.parent = crateObjectHolder;
         heldCrate.gameObject.layer = 9; ///Sets layer back to being with other crates.
         allDroppedCrates.Add(heldCrate);
