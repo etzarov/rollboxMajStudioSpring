@@ -125,4 +125,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_5_2.unity
     guid: dcf6ae218802e534d9d81e7766635cdd
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_2.unity
+    guid: d700f9f46cb5acc4aa6f3efd7b7e9d2c
   m_configObjects: {}
