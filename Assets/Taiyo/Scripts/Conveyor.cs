@@ -102,4 +102,13 @@ public class Conveyor : MonoBehaviour
   
     }
 
+
+    /// <summary>
+    /// This is a function to change the direction of the Conveyor belt
+    /// </summary>
+    public void ChangeDirection()
+    {
+        speed *= -1;
+    }
+
 } // class BeltConveyor
