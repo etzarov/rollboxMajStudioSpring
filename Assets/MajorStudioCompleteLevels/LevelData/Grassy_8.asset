@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036e02ac442ed447aa00e1d13aa7b95, type: 3}
   m_Name: Grassy_8
   m_EditorClassIdentifier: 
-  buildSceneNumber: 24
+  buildSceneNumber: 23
   nextLevel: {fileID: 11400000, guid: 84bbd253476169e449afb55e0312d427, type: 2}
   maxCratesFor3Stars: 3
   maxCratesFor2Stars: 4
   levelCompletionData:
-    completed: 0
+    completed: 1
     cratesUsed: 0
-    earnedStars: 0
+    earnedStars: 3
