@@ -64,6 +64,8 @@ public class CurrentLevelManager : MonoBehaviour
 
     public void ResetGame()
     {
+        //Added by Taiyo Baniecki Reset the scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         if (CraneManagement.main != null)
         {
             CraneManagement.main.ClearAllCrates();
