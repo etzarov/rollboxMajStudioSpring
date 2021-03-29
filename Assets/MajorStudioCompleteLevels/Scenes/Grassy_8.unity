@@ -323,6 +323,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1 &40189800
@@ -748,6 +753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PLATFORM (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -6014,6 +6024,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1001 &868192163
@@ -6098,6 +6113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1001 &869776141
@@ -6181,6 +6201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PLATFORM (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -11414,6 +11439,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1 &1583173853
@@ -12342,6 +12372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1 &1853089040
@@ -13259,7 +13294,7 @@ GameObject:
   - component: {fileID: 4918639928207407047}
   - component: {fileID: 9021659629019459312}
   - component: {fileID: 4478553724232875835}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Sprite Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}

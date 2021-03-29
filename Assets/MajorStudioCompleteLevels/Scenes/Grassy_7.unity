@@ -894,6 +894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite Shape (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1001 &622444597
@@ -1126,6 +1131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sprite Shape (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -1472,6 +1482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sprite Shape (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -1923,6 +1938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite Shape (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!4 &1204995600 stripped
@@ -2307,6 +2327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite Shape (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
 --- !u!1 &1773785342 stripped
@@ -2640,6 +2665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sprite Shape (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -3162,7 +3192,7 @@ GameObject:
   - component: {fileID: 4918639928538236657}
   - component: {fileID: 9021659629358555078}
   - component: {fileID: 4478553724564721165}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Sprite Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}

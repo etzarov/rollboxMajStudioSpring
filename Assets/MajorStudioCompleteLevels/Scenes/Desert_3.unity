@@ -1043,7 +1043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076303309}
   - component: {fileID: 1076303310}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Level Complete Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 2133955979}
   - component: {fileID: 2133955980}
   - component: {fileID: 2133955981}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}

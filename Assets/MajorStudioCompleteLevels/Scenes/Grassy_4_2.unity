@@ -6966,6 +6966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLATFORM
       objectReference: {fileID: 0}
+    - target: {fileID: 5122986533061595659, guid: 5105a589338b7d84c8e72d960916b3ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 432003650651548089, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5105a589338b7d84c8e72d960916b3ad, type: 3}
@@ -12381,7 +12386,7 @@ GameObject:
   - component: {fileID: 4918639928207407047}
   - component: {fileID: 9021659629019459312}
   - component: {fileID: 4478553724232875835}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Sprite Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
