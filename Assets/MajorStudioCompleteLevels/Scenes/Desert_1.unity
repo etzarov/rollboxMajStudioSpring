@@ -360,6 +360,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eac3c5e0f1477064e9683134b58eb918,
+        type: 3}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_RootOrder
@@ -782,6 +788,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eac3c5e0f1477064e9683134b58eb918,
+        type: 3}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_RootOrder
