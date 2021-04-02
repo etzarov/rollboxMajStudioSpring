@@ -996,6 +996,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4653290115795039307, guid: 542fa2a8be6425f43906b54210b797bb,
         type: 3}
+      propertyPath: heldCrateSensitivity
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653290115795039307, guid: 542fa2a8be6425f43906b54210b797bb,
+        type: 3}
       propertyPath: initialCrates.Array.size
       value: 0
       objectReference: {fileID: 0}

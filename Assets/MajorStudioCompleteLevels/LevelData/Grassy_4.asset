@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildSceneNumber: 19
   nextLevel: {fileID: 11400000, guid: a1988d571d7ae1f46ad44c5e9f946b8e, type: 2}
-  maxCratesFor3Stars: 1
-  maxCratesFor2Stars: 2
+  maxCratesFor3Stars: 2
+  maxCratesFor2Stars: 3
   levelCompletionData:
     completed: 1
     cratesUsed: 0
