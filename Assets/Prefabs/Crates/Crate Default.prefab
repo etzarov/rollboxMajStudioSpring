@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  collider: {fileID: 7608717081081957782}
   touchHitbox: {fileID: 5628452803519799075}
   breakEffects:
   - {fileID: 5502827608376235864, guid: 2afb30f0a25504344a4595af64902a35, type: 3}

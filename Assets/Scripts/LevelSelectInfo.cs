@@ -5,6 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Level", menuName = "Level Data")]
 public class LevelSelectInfo : ScriptableObject
 {
+    public enum LevelZone
+    {
+        None,
+        Grassy,
+        Western,
+        Caverns
+    }
+
+    public LevelZone levelZone;
     public int buildSceneNumber;
     public LevelSelectInfo nextLevel;
     [Space]
@@ -12,6 +21,8 @@ public class LevelSelectInfo : ScriptableObject
     public int maxCratesFor2Stars;
     [Space]
     public LevelCompletionData levelCompletionData;
+
+
 }
 
 [System.Serializable]
