@@ -5,6 +5,7 @@ using UnityEngine;
 public class CrateInfo : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public BoxCollider2D collider;
     public BoxCollider touchHitbox;
     public GameObject[] breakEffects;
     [Space]

@@ -10,6 +10,8 @@ public class MenuManager : MonoBehaviour
     public ButtonScript playButton;
     public ButtonScript customizeButton;
 
+    public MenuMusicManager menuMusicManager;
+
     public enum MenuState
     {
         MainScreen,
@@ -139,7 +141,12 @@ public class MenuManager : MonoBehaviour
         }
         else if (newState == MenuState.LevelSelect)
         {
-            LevelSelectManager.main.LoadData(true);     
+            LevelSelectManager.main.LoadData(true);
+            menuMusicManager.MoveToLevelMap();
+        }
+        else
+        {
+            menuMusicManager.MoveToMenu();
         }
         
 
@@ -162,7 +169,9 @@ public class MenuManager : MonoBehaviour
                     newPos.y = Mathf.Max(newPos.y - changeAmount, 0);
                     Camera.main.transform.position = newPos;
                     UpdateLevelSelectKnob();
+                    menuMusicManager.currentHeight = newPos.y;
                     yield return new WaitForEndOfFrame();
+
                 }
                 Vector3 nPos = Camera.main.transform.position;
                 nPos.y = 0;
@@ -417,6 +426,10 @@ public class MenuManager : MonoBehaviour
         #endregion
         Vector3 tPos = Camera.main.transform.position;
         tPos.y = Mathf.Lerp(tPos.y, targetLevelPos, .1f);
+        if (!inStateChange)
+        {
+            menuMusicManager.currentHeight = tPos.y;
+        }
         Camera.main.transform.position = tPos;
 
 

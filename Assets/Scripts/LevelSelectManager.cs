@@ -9,6 +9,7 @@ public class LevelSelectManager : MonoBehaviour
 
     [Header("Level Select")]
     public LevelSelectButton[] allLevels;
+    public BonusLevelConnector[] bonusLevels;
     [Header("Level Select Palettes")]
     public Palette grassyPalette;
     [Space]
@@ -32,6 +33,29 @@ public class LevelSelectManager : MonoBehaviour
     {
         DetectClicks();
         UpdateLevelDisplays();
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnlockAll();
+        }
+    }
+
+    void UnlockAll()
+    {
+        foreach (var level in allLevels)
+        {
+            level.unlocked = true;
+            level.levelToTravelTo.levelCompletionData.completed = true;
+        }
+
+        foreach (var level in bonusLevels)
+        {
+            level.levelSelectButton.unlocked = true;
+            level.levelSelectButton.levelToTravelTo.levelCompletionData.completed = true;
+        }
+
+        SaveAllData();
+        UpdateLevelDisplays();
     }
 
     void UpdateLevelDisplays()
@@ -42,8 +66,12 @@ public class LevelSelectManager : MonoBehaviour
         int levelNo = 1;
         for (int i = 0; i < allLevels.Length; i++)
         {
-            allLevels[i].UpdateDisplay(grassyPalette,levelNo);
+            allLevels[i].UpdateDisplay(grassyPalette,levelNo.ToString());
             levelNo++;
+        }
+        foreach (var bonusLevel in bonusLevels)
+        {
+            bonusLevel.levelSelectButton.UpdateDisplay(grassyPalette, (bonusLevel.connectedLevelIndex + 1).ToString() + "a");
         }
     }
 
@@ -59,6 +87,14 @@ public class LevelSelectManager : MonoBehaviour
             allLevels[i].unlocked = previousCompleted;
 
             previousCompleted = allLevels[i].levelToTravelTo.levelCompletionData.completed;
+        }
+
+        foreach (var bonusLevel in bonusLevels)
+        {
+            if (allLevels[bonusLevel.connectedLevelIndex].unlocked)
+            {
+                bonusLevel.levelSelectButton.unlocked = true;
+            }
         }
     }
 
@@ -78,6 +114,19 @@ public class LevelSelectManager : MonoBehaviour
                     {
                         //TransitionManager.main.Transition();
                         SceneManager.LoadScene(allLevels[i].levelToTravelTo.buildSceneNumber);
+                        break;
+                    }
+                }
+            }
+
+            foreach (var bonusLevel in bonusLevels)
+            {
+                if (ExtensionMethods.TouchedHitbox(bonusLevel.levelSelectButton.touchHitbox, touchPos))
+                {
+                    if (bonusLevel.levelSelectButton.unlocked)
+                    {
+                        //TransitionManager.main.Transition();
+                        SceneManager.LoadScene(bonusLevel.levelSelectButton.levelToTravelTo.buildSceneNumber);
                         break;
                     }
                 }
@@ -129,6 +178,20 @@ public class LevelSelectManager : MonoBehaviour
         ES3.Save<LevelSaveData>(saveString, lSaveData);
     }
 
+    public void SaveAllData()
+    {
+        foreach (var level in allLevels)
+        {
+            SaveProgress(level.unlocked, level.levelToTravelTo.levelCompletionData.cratesUsed, level.levelToTravelTo.levelCompletionData.earnedStars, false, level.levelToTravelTo);
+        }
+
+        foreach (var bonusLevel in bonusLevels)
+        {
+            LevelSelectButton level = bonusLevel.levelSelectButton;
+            SaveProgress(level.unlocked, level.levelToTravelTo.levelCompletionData.cratesUsed, level.levelToTravelTo.levelCompletionData.earnedStars, false, level.levelToTravelTo);
+        }
+    }
+
     void GenerateLineConnectors()
     {
         int totalLevels = allLevels.Length;
@@ -139,10 +202,30 @@ public class LevelSelectManager : MonoBehaviour
             tPos.z = .1f;
             lineRenderer.SetPosition(i, tPos);
         }
+        foreach (var bonusLevel in bonusLevels)
+        {
+            bonusLevel.connectedLine.positionCount = 2;
+            Vector3 tPos = bonusLevel.levelSelectButton.transform.position;
+            tPos.z = .1f;
+            bonusLevel.connectedLine.SetPosition(0, tPos);
+            tPos = allLevels[bonusLevel.connectedLevelIndex].transform.position;
+            tPos.z = .1f;
+            bonusLevel.connectedLine.SetPosition(1, tPos);
+        }
     }
 
 }
 
+
+[System.Serializable]
+public class BonusLevelConnector
+{
+    public LevelSelectButton levelSelectButton;
+    [Tooltip("The current level that it branches off from")]
+    public int connectedLevelIndex;
+
+    public LineRenderer connectedLine;
+}
 
 //[System.Serializable]
 //public class ProgressionBarricade

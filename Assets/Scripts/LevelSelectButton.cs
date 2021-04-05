@@ -24,7 +24,7 @@ public class LevelSelectButton : MonoBehaviour
     /// Updates the current colors and star display of the level button.
     /// </summary>
     /// <param name="usedPalette">The color palette to use for the button.</param>
-    public void UpdateDisplay(Palette usedPalette, int levelNumber)
+    public void UpdateDisplay(Palette usedPalette, string levelNumber)
     {
         Palette p = usedPalette;
 
@@ -37,7 +37,7 @@ public class LevelSelectButton : MonoBehaviour
             insideButtonSR.color = p.buttonInside;
 
            
-            levelNumberText.text = levelNumber.ToString();
+            levelNumberText.text = levelNumber;
             levelNumberText.color = p.text;
             lockIcon.enabled = false;
         }
