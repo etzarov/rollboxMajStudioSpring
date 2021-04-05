@@ -23,6 +23,8 @@ public class CurrentLevelManager : MonoBehaviour
     public BoxCollider homeButton;
     public BoxCollider nextLevelButton;
 
+
+
     private void Awake()
     {
         main = this;

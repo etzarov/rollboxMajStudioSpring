@@ -10,7 +10,8 @@ public class MusicManager : MonoBehaviour
     public float masterVolume;
 
     public AudioClip grassAudio;
-    public AudioClip iceAudio;
+    public AudioClip westernAudio;
+    public AudioClip caveAudio;
 
     AudioClip targetAudio;
 
@@ -31,22 +32,29 @@ public class MusicManager : MonoBehaviour
     private void Update()
     {
         cScene = SceneManager.GetActiveScene().buildIndex;
-        if (cScene < 10 || cScene == 14)
+        if (cScene == 0)
         {
-            targetAudio = grassAudio;
+            targetAudio = null;
         }
         else
         {
-            targetAudio = iceAudio;
+            if (CurrentLevelManager.main)
+            {
+                targetAudio = GetAudioClip(CurrentLevelManager.main.thisLevel.levelZone);
+            }
+           
         }
         if (aSrc.clip != targetAudio)
         {
             aSrc.volume -= Time.deltaTime/6f;
             if (aSrc.volume <= .01f)
             {
-                aSrc.clip = targetAudio;
                 aSrc.Stop();
-                aSrc.Play();
+                aSrc.clip = targetAudio;
+                if (targetAudio != null)
+                {
+                    aSrc.Play();
+                }
             }
         }
         else
@@ -59,5 +67,17 @@ public class MusicManager : MonoBehaviour
     {
         masterVolume = SettingsManager.main.musicVolume;
         aSrc.volume = masterVolume * .4f;
+    }
+
+    AudioClip GetAudioClip(LevelSelectInfo.LevelZone lz)
+    {
+        switch (lz)
+        {
+            case LevelSelectInfo.LevelZone.None: return targetAudio;
+            case LevelSelectInfo.LevelZone.Grassy: return grassAudio;
+            case LevelSelectInfo.LevelZone.Western: return westernAudio;
+            case LevelSelectInfo.LevelZone.Caverns: return caveAudio;
+            default: return targetAudio;
+        }
     }
 }

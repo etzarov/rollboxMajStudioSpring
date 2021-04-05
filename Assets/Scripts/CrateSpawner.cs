@@ -10,6 +10,7 @@ public class CrateSpawner : MonoBehaviour
     [Header("Config")]
     [Tooltip("If the player touches inside anyone of these colliders, a crate will not spawn")]
     [SerializeField] private LayerMask preventativeColliders;
+    public bool isMenuSpawner;
     [SerializeField] private LayerMask cantPlaceColliders;
     [SerializeField] private GameObject crateObj;
     [SerializeField] private Transform crateObjectHolder;
@@ -40,6 +41,7 @@ public class CrateSpawner : MonoBehaviour
     [Header("Input")]
     [Tooltip("Controls how accurately crate follows mouse, only in 'Always Hold Crate' mode.")]
     [Range(0.01f, 1)] [SerializeField] private float sensitivityLerp = .5f;
+    [SerializeField] private float maxCrateVelocity;
 
     [Header("Crate Outline")]
     [SerializeField] private SpriteRenderer crateOutlineSR;
@@ -121,7 +123,7 @@ public class CrateSpawner : MonoBehaviour
     {
         if (pressed && !dropDisabled)
         {
-            bool canSpawn = ValidTouchPosition(touchPos);
+           // bool canSpawn = ValidTouchPosition(touchPos);
             bool isInitialCrate = false;
             CrateInfo brokenCrate = TouchesCrate(touchPos, ref isInitialCrate);
             if (brokenCrate)
@@ -129,7 +131,7 @@ public class CrateSpawner : MonoBehaviour
                 BreakCrate(brokenCrate, isInitialCrate);
                 return;
             }
-            else if (canSpawn)
+            else //if (canSpawn)
             {
                 TrySpawnCrate();
             }
@@ -156,15 +158,19 @@ public class CrateSpawner : MonoBehaviour
             if (heldCrate) heldCrateSR.enabled = false;
             breakCrateXSR.enabled = true;
         }
-        else if (validPosition)
+        else
         {
             if (heldCrate) heldCrateSR.enabled = true;
             breakCrateXSR.enabled = false;
         }
-        else
+
+        if (isMenuSpawner)
         {
-            if (heldCrate) heldCrateSR.enabled = false;
-            breakCrateXSR.enabled = false;
+            if (validPosition)
+            {
+                heldCrateSR.enabled = true;
+            }
+            else heldCrateSR.enabled = false;
         }
 
         if (pressed && !dropDisabled)
@@ -177,7 +183,6 @@ public class CrateSpawner : MonoBehaviour
     private void TryHoldCrate()
     {
         if (timeLeftToSpawn > 0) return;
-        if (!ValidTouchPosition(mousePos)) return;
         timeLeftToSpawn = timeDelayBeforeNextCrate;
         holdingCrate = true;
         GameObject newCrate = Instantiate(crateObj, mousePos, Quaternion.identity, crateObjectHolder);
@@ -190,7 +195,12 @@ public class CrateSpawner : MonoBehaviour
         heldCrateRB.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         heldCrateSR = heldCrate.GetComponentInChildren<SpriteRenderer>();
         heldCrateSR.color = new Color(1, 1, 1, .4f);
-        heldCrate.gameObject.layer = 13; ///Sets the layer to CratePieces to avoid colliding with player or anything important (besides walls).
+        heldCrate.gameObject.layer = 13;
+        if (!isMenuSpawner)
+        {
+            heldCrate.collider.enabled = false;
+        }
+        ///Sets the layer to CratePieces to avoid colliding with player or anything important (besides walls).
     }
 
     void TrackHeldCrate()
@@ -212,7 +222,7 @@ public class CrateSpawner : MonoBehaviour
         allDroppedCrates.Add(heldCrate);
         heldCrateSR.color = Color.white;
         heldCrateRB.angularDrag = 0.05f;
-
+        heldCrate.collider.enabled = true;
         heldCrate = null;
         heldCrateRB = null;
         heldCrateSR = null;
@@ -359,7 +369,7 @@ public class CrateSpawner : MonoBehaviour
     private void TrySpawnCrate()
     {
         if (timeLeftToSpawn > 0) return;
-        if (!ValidTouchPosition(mousePos)) return;
+       // if (!ValidTouchPosition(mousePos)) return;
         timeLeftToSpawn = timeDelayBeforeNextCrate;
 
         GameObject newCrate = Instantiate(crateObj, mousePos, Quaternion.identity, crateObjectHolder);
@@ -400,16 +410,27 @@ public class CrateSpawner : MonoBehaviour
     /// </summary>
     /// <param name="touchP">Touch/input position.</param>
     /// <returns></returns>
-    bool ValidTouchPosition(Vector3 touchP)
-    {
-        return !Physics2D.OverlapCircle(touchP, .1f, preventativeColliders);
-    }
+    //bool ValidTouchPosition(Vector3 touchP)
+    //{
+    //    return !Physics2D.OverlapCircle(touchP, .1f, preventativeColliders);
+    //}
 
     bool ValidPlacePosition()
     {
         if (!heldCrate) return false;
-        Collider2D[] results = new Collider2D[1];
-        return !Physics2D.OverlapCircle(heldCrateRB.position, .45f, cantPlaceColliders);
+        Collider2D[] results = new Collider2D[10];
+        Vector2 topLeft = heldCrate.gameObject.transform.position;
+        Vector2 bottomRight = topLeft;
+
+        topLeft.x += -.7f;
+        topLeft.y += .7f;
+
+        bottomRight.x += .7f;
+        bottomRight.y += -.7f;
+
+        return !Physics2D.OverlapArea(topLeft, bottomRight, preventativeColliders);
+        
+       // return !Physics2D.OverlapCircle(heldCrateRB.position, .45f, cantPlaceColliders);
     }
 
     /// <summary>
