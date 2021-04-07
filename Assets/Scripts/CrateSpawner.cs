@@ -164,6 +164,9 @@ public class CrateSpawner : MonoBehaviour
             breakCrateXSR.enabled = false;
         }
 
+        if (!ValidPlacePosition())
+            breakCrateXSR.enabled = true;
+
         if (isMenuSpawner)
         {
             if (validPosition)
