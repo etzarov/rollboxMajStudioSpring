@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036e02ac442ed447aa00e1d13aa7b95, type: 3}
   m_Name: Grassy_1
   m_EditorClassIdentifier: 
+  levelZone: 1
   buildSceneNumber: 17
   nextLevel: {fileID: 11400000, guid: fbe958cc5c766494eacc75076e9bd65e, type: 2}
   maxCratesFor3Stars: 1
