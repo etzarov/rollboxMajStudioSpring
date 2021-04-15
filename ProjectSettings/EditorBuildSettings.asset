@@ -138,10 +138,10 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_1.unity
     guid: 4686f7a5123191f45b696179acf4fdeb
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
     guid: 5201f877bfe43b6439c9efd500923b60
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_55.unity
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
     guid: f5e3f246de67bfc49b4a5403eaa9bb4c
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_7.unity
