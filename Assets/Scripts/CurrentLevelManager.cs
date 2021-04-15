@@ -23,6 +23,8 @@ public class CurrentLevelManager : MonoBehaviour
     public BoxCollider homeButton;
     public BoxCollider nextLevelButton;
 
+    private float resetTimer = 2.0f;
+
 
 
     private void Awake()
@@ -61,6 +63,14 @@ public class CurrentLevelManager : MonoBehaviour
         }
 
         resetDisplay.enabled = mustReset;
+        if (mustReset)
+        {
+            resetTimer -= Time.deltaTime;
+            if(resetTimer <= 0)
+            {
+                ResetGame();
+            }
+        }
         levelCompleteDisplay.gameObject.SetActive(levelComplete);
     }
 

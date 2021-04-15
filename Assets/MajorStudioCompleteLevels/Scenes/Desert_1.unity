@@ -744,6 +744,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5803948775594145866, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803948775594145866, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.32
+      objectReference: {fileID: 0}
     - target: {fileID: 5803948775659469144, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -760,6 +770,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 592eb7b86679ee049b21707308f3d440,
         type: 2}
+    - target: {fileID: 5803948775880556689, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803948776655761380, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.24
+      objectReference: {fileID: 0}
     - target: {fileID: 6474111632353202888, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
         type: 3}
       propertyPath: maxSpeedToCompleteLevel

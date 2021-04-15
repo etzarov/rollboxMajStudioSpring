@@ -9,71 +9,17 @@ EditorBuildSettings:
     path: Assets/Scripts/Scenes/LevelSelect.unity
     guid: 6eb0d7982dc32674fac96003e681242f
   - enabled: 1
-    path: Assets/Taiyo/Scenes/StageSelectForNow.unity
-    guid: 7b362d6dac57af142a8af60ed75c785c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Test_Level2.unity
-    guid: 05f3efe207ed36c48aa232f709ac4804
-  - enabled: 1
-    path: Assets/CompletedLevels/Grassy_Intro.unity
-    guid: 6ae21c3f7e03c4777a4e2cd5c0b0c9cd
-  - enabled: 1
-    path: Assets/CompletedLevels/grassy_tut2.unity
-    guid: f600de7f18a407d4c94f2a4373eb0cf3
-  - enabled: 1
-    path: Assets/CompletedLevels/Grassy_LargeGap.unity
-    guid: c8f256756d31743e491f08d67bfb2406
-  - enabled: 1
-    path: Assets/CompletedLevels/Grassy_CrateTutorial.unity
-    guid: 0f4d867ba35df4fc480e93befa6553fe
-  - enabled: 1
-    path: Assets/CompletedLevels/grassy_elevator.unity
-    guid: e1f728b7c47002045a0f0ddab0e81474
-  - enabled: 1
-    path: Assets/CompletedLevels/grassy_elevator2.unity
-    guid: 67235c0bf37c8c249a43960f0cb4846c
-  - enabled: 1
-    path: Assets/CompletedLevels/grassy_speedgap.unity
-    guid: ed9b6ca6f73e94347b1d1c04714516d7
-  - enabled: 0
-    path: Assets/CompletedLevels/grassy_speedboost1.unity
-    guid: 2e721648594401847b3f6d5280f5e7eb
-  - enabled: 1
-    path: Assets/CompletedLevels/Grassy_Parabola.unity
-    guid: 2533a5f07a1c7487bbc771ed3d5ee968
-  - enabled: 1
-    path: Assets/CompletedLevels/Cave_Intro.unity
-    guid: ef300ca5d60774428bc361c76a4af91a
-  - enabled: 1
-    path: Assets/CompletedLevels/cave_topbutton.unity
-    guid: 1ab57932efb3f2f43a55d6e5148f0322
-  - enabled: 1
-    path: Assets/CompletedLevels/cave_tntspin.unity
-    guid: 77b8378c2431a644896475895d6df921
-  - enabled: 1
-    path: Assets/CompletedLevels/Cave_TNTSpin2.unity
-    guid: c1957eb240ea445b1b3a7d7b5f944ee6
-  - enabled: 1
-    path: Assets/CompletedLevels/Test_IceWater.unity
-    guid: 36bf6bc00dff3434c92b192c3dc6c548
-  - enabled: 1
-    path: Assets/CompletedLevels/Grassy_Door.unity
-    guid: 375640279bb61409397a67af56fc8f09
-  - enabled: 1
     path: Assets/Scripts/Scenes/CreditScene.unity
     guid: d49f05ac150db4375a85c9d2eb125524
   - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_extra.unity
+    guid: 5cdf07a643529c94ca648cb6782ae663
+  - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_1.unity
     guid: e9055d2fbd78d614b8f93d569079ef5c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_2.unity
+    guid: d700f9f46cb5acc4aa6f3efd7b7e9d2c
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_3.unity
     guid: 75b904e55c69b734faaafe5d1c37a3b6
@@ -81,78 +27,57 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_4.unity
     guid: 288196ffcaa51404faf89b1aceb6f145
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Grassy_5.unity
-    guid: 3db3b22b0ab19414eb0461ce4927cd03
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_5.unity
+    guid: dcf6ae218802e534d9d81e7766635cdd
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_6.unity
     guid: 8661f611cbfbecd4da9a0840fc8ce177
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_extra.unity
-    guid: 3f6d6d3d23d5baa44b3877a57269c88e
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_7.unity
+    guid: c6dafc8dd858b0f4b808717bb5e3aa33
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_8.unity
     guid: bf432c01eb6211f42ae0f37877ba3711
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Grassy_9Noart.unity
-    guid: 421cca9679f73b5409ff0b5fefdca3c0
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_extra.unity
-    guid: 5cdf07a643529c94ca648cb6782ae663
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_2.unity
-    guid: fdd9e547b78297a4cb0a2c0a8c6619b7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_66.unity
-    guid: 00686a50c9ce13b4e9d19bc7c747290a
+    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_9.unity
+    guid: 5aec112fc70464347bb49266718037d9
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_10.unity
     guid: a7244dd56c50278419d31974a187e61a
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Grassy_4_2.unity
-    guid: 37c528d59e7099b4aaf052c4ee4abd09
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_1.unity
+    guid: 4686f7a5123191f45b696179acf4fdeb
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_5.unity
-    guid: dcf6ae218802e534d9d81e7766635cdd
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_2.unity
+    guid: f09513588692dee48831931bd6ab2475
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_2.unity
-    guid: d700f9f46cb5acc4aa6f3efd7b7e9d2c
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_7.unity
-    guid: c6dafc8dd858b0f4b808717bb5e3aa33
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_3.unity
+    guid: 359f5345f154e8c48a3cc14053556ffa
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
     guid: a257fcf20538ef14f806e8212a00cbe5
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_1.unity
-    guid: 4686f7a5123191f45b696179acf4fdeb
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
     guid: 5201f877bfe43b6439c9efd500923b60
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
-    guid: f5e3f246de67bfc49b4a5403eaa9bb4c
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_6.unity
+    guid: 31a1b160e233dc640ba2d97101be78d7
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_7.unity
     guid: 3e073b0e379bbd04e9294bc6b0d380ca
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_8.unity
+    guid: c1b6b9b1110adbb4b8e42c2a87b2e968
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_9.unity
     guid: 05d59cfa7abf7234f817871721f0ce24
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_10.unity
     guid: 21e7e7b3e2b37f547b13904fd8ced26e
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_9.unity
-    guid: 5aec112fc70464347bb49266718037d9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
