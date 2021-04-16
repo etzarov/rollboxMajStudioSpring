@@ -1247,6 +1247,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_RootOrder
@@ -1315,6 +1320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851591, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
