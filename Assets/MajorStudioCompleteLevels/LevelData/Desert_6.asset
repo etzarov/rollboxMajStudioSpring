@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6036e02ac442ed447aa00e1d13aa7b95, type: 3}
   m_Name: Desert_6
   m_EditorClassIdentifier: 
-  buildSceneNumber: 27
+  levelZone: 2
+  buildSceneNumber: 41
   nextLevel: {fileID: 11400000, guid: 34e34d94d980e3f4f9b878a0059af003, type: 2}
   maxCratesFor3Stars: 5
   maxCratesFor2Stars: 7

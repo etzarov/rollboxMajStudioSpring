@@ -107,9 +107,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_extra.unity
     guid: 5cdf07a643529c94ca648cb6782ae663
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_2.unity
-    guid: fdd9e547b78297a4cb0a2c0a8c6619b7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -138,11 +138,11 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_1.unity
     guid: 4686f7a5123191f45b696179acf4fdeb
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
-    guid: 5201f877bfe43b6439c9efd500923b60
-  - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
-    guid: f5e3f246de67bfc49b4a5403eaa9bb4c
+    guid: 5201f877bfe43b6439c9efd500923b60
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_7.unity
     guid: 3e073b0e379bbd04e9294bc6b0d380ca
@@ -155,4 +155,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_9.unity
     guid: 5aec112fc70464347bb49266718037d9
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_2_Art.unity
+    guid: 457156dfdc0d9384aae374a3da908c84
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_3.unity
+    guid: 359f5345f154e8c48a3cc14053556ffa
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_6.unity
+    guid: 31a1b160e233dc640ba2d97101be78d7
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_8.unity
+    guid: c1b6b9b1110adbb4b8e42c2a87b2e968
   m_configObjects: {}

@@ -12,6 +12,7 @@ public class CurrentLevelManager : MonoBehaviour
     public int totalCratesDropped;
     [Space]
     public bool mustReset;
+    private float resetTimer = 2.0f;
     public SpriteRenderer resetDisplay;
 
     public bool levelComplete;
@@ -61,6 +62,14 @@ public class CurrentLevelManager : MonoBehaviour
         }
 
         resetDisplay.enabled = mustReset;
+        if (mustReset)
+        {
+            resetTimer -= Time.deltaTime;
+            if(resetTimer <= 0)
+            {
+                ResetGame();
+            }
+        }
         levelCompleteDisplay.gameObject.SetActive(levelComplete);
     }
 
