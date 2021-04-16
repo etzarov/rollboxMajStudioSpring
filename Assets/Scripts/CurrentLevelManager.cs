@@ -49,6 +49,11 @@ public class CurrentLevelManager : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            levelComplete = true;
+        }
+
         if (levelComplete)
         {
             if (ExtensionMethods.TouchedHitbox(nextLevelButton))

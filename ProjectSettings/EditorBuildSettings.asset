@@ -113,9 +113,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_66.unity
-    guid: 00686a50c9ce13b4e9d19bc7c747290a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_10.unity
     guid: a7244dd56c50278419d31974a187e61a
@@ -179,4 +179,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Taiyo/Levels/Betalevels/Cave4.unity
     guid: 6480a1d4829f1f140aed6e4ebf1ad983
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_3_Art.unity
+    guid: 15c83173105d81649b9fa15820ba1064
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_7_Art.unity
+    guid: c3decfa7434e3a94cadc2b071eedd926
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_4_Art.unity
+    guid: c0fa6c909f3efae45ab053cf67a417e1
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_1_Art.unity
+    guid: 4b753c1c072133c4fb7f9c4f5ebe4076
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_5_Art.unity
+    guid: 2111a3136c9b79647881e47c2d3fca69
+  - enabled: 1
+    path: Assets/LeoWang/BetaLevels/Levels/Desert_6_Art.unity
+    guid: e9827d7f691ec3b4d8d0ab5bb5555449
   m_configObjects: {}
