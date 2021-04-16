@@ -28,8 +28,12 @@ public class Conveyor : MonoBehaviour
         initialPosition = new List<Vector3>();
 
         speed = speed1;
-        bs = button.GetComponent<ButtonScript>();
 
+        if(button != null)
+        {
+            bs = button.GetComponent<ButtonScript>();
+        }
+        
         var s = this.GetComponent<BoxCollider2D>().size;
         leftend = this.transform.localPosition.x - s.x/2;
         rightend = this.transform.localPosition.x + s.x/2;
@@ -78,7 +82,7 @@ public class Conveyor : MonoBehaviour
             targetRigidbody.RemoveAt(delete);
         }
 
-        if (bs.buttonPressed)
+        if (bs != null && bs.buttonPressed)
         {
                 speed = speed2;
            
@@ -118,7 +122,14 @@ public class Conveyor : MonoBehaviour
             initialPosition.Add(collision.transform.position);
 
         }
-  
+        else if (collision.gameObject.name == "TNT")
+        {
+            targetTransform.Add(collision.transform);
+            targetRigidbody.Add(collision.gameObject.GetComponent<Rigidbody2D>());
+            initialPosition.Add(collision.transform.position);
+
+        }
+
     }
 
 
