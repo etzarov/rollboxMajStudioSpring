@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6036e02ac442ed447aa00e1d13aa7b95, type: 3}
-  m_Name: Desert_10
+  m_Name: Cave_1
   m_EditorClassIdentifier: 
-  levelZone: 2
-  buildSceneNumber: 37
-  nextLevel: {fileID: 11400000, guid: 99871828bdad1c1498f4867262eb5efb, type: 2}
-  maxCratesFor3Stars: 4
-  maxCratesFor2Stars: 5
+  levelZone: 3
+  buildSceneNumber: 43
+  nextLevel: {fileID: 11400000, guid: 0c641d8915c5f68489ed159ba91f7aee, type: 2}
+  maxCratesFor3Stars: 2
+  maxCratesFor2Stars: 4
   levelCompletionData:
     completed: 1
-    cratesUsed: 4
+    cratesUsed: 2
     earnedStars: 3
