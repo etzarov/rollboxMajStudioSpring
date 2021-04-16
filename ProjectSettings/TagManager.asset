@@ -6,6 +6,7 @@ TagManager:
   tags:
   - colliders
   - tnt
+  - conveyor
   layers:
   - Default
   - TransparentFX

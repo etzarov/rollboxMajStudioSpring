@@ -167,4 +167,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_8.unity
     guid: c1b6b9b1110adbb4b8e42c2a87b2e968
+  - enabled: 1
+    path: Assets/Taiyo/Levels/Betalevels/Cave1.unity
+    guid: 6171ba4d61399ff4984542904ead2edd
+  - enabled: 1
+    path: Assets/Taiyo/Levels/Betalevels/Cave2.unity
+    guid: c1fc8db38069f5146b067ea48e10369f
+  - enabled: 1
+    path: Assets/Taiyo/Levels/Betalevels/Cave3.unity
+    guid: e7656dd6d2ea9a24ea006065b4954522
+  - enabled: 1
+    path: Assets/Taiyo/Levels/Betalevels/Cave4.unity
+    guid: 6480a1d4829f1f140aed6e4ebf1ad983
   m_configObjects: {}
