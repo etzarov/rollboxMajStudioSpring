@@ -1058,6 +1058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_Sprite

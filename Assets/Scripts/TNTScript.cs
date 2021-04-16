@@ -108,9 +108,11 @@ public class TNTScript : MonoBehaviour
         CactusScript[] cs;
         cs = Resources.FindObjectsOfTypeAll(typeof(CactusScript)) as CactusScript[];
 
+        //Edited by Leo Wang changing Vector3.Distance to Vector2.Distance
         foreach (CactusScript c in cs)
         {
-            if (Vector3.Distance(c.transform.position, p) < dist)
+            //if (Vector3.Distance(c.transform.position, p) < dist)
+            if (Vector2.Distance(c.transform.position, p) < dist)
             {
                 c.DestroySelf();
             }
