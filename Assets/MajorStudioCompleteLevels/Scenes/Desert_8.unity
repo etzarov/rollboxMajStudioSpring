@@ -160,6 +160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_SortingOrder
@@ -307,6 +312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -473,6 +483,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -1404,6 +1419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1583,6 +1603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1656,6 +1681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -2112,6 +2142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -2737,6 +2772,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2748859394805616716}
     m_Modifications:
+    - target: {fileID: 8551822938287398956, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7961ad495f7c87840b55311ea6542e8a,
+        type: 3}
+    - target: {fileID: 8551822938287398957, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551822938287398957, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.32
+      objectReference: {fileID: 0}
     - target: {fileID: 8551822938491101497, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
         type: 3}
       propertyPath: m_Name
@@ -2746,7 +2797,7 @@ PrefabInstance:
         type: 3}
       propertyPath: thisLevel
       value: 
-      objectReference: {fileID: 11400000, guid: 592eb7b86679ee049b21707308f3d440,
+      objectReference: {fileID: 11400000, guid: af6532af7d59f2949a913734d3f1d9fc,
         type: 2}
     - target: {fileID: 8551822938491101503, guid: 6fd1b8a4a298647c18f6f1bef9aaca83,
         type: 3}

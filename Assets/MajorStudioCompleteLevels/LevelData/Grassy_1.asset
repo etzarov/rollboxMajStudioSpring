@@ -18,6 +18,6 @@ MonoBehaviour:
   maxCratesFor3Stars: 1
   maxCratesFor2Stars: 2
   levelCompletionData:
-    completed: 0
-    cratesUsed: 0
-    earnedStars: 0
+    completed: 1
+    cratesUsed: 1
+    earnedStars: 3

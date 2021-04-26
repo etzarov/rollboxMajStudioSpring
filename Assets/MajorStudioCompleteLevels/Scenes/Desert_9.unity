@@ -593,6 +593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_Sprite
@@ -1176,6 +1181,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
       propertyPath: m_Sprite
@@ -1379,6 +1389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093612453040851586, guid: 6c4489362d752524c92716d1e44adc08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5093612453040851587, guid: 6c4489362d752524c92716d1e44adc08,
         type: 3}
@@ -2845,7 +2860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5803948776005152908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5803948776204628380}
@@ -2890,7 +2905,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 21300000, guid: ea8689a624aae844583635a67b5f48cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7961ad495f7c87840b55311ea6542e8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2948,7 +2963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76658520b2c2b1740a8b47b9f0410486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisLevel: {fileID: 11400000, guid: af6532af7d59f2949a913734d3f1d9fc, type: 2}
+  thisLevel: {fileID: 11400000, guid: 4b50d3b324f51a847b6f75e7755338c3, type: 2}
   generalPalette: {fileID: 11400000, guid: 7497609d37f422b44912eb40272449d4, type: 2}
   totalCratesDropped: 0
   mustReset: 0

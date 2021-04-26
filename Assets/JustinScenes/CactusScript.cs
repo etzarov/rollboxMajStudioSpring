@@ -32,15 +32,19 @@ public class CactusScript : MonoBehaviour
 
         if(collision.gameObject.layer == 12)
         {
-            CurrentLevelManager.main.ResetGame();
+            GameObject.Find("Player").SetActive(false);
+            CurrentLevelManager.main.mustReset = true;
         }
 
     }
 
 
     //Added by Taiyo Baniecki for TNT Crate Explosion
+    //Edited by Leo Wang to solve "Destroying assets is not permitted to avoid data loss."
+    //It how disables the object instead of destroying it
     public void DestroySelf()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }
