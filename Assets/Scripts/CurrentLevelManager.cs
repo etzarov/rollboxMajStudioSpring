@@ -209,6 +209,11 @@ public class CurrentLevelManager : MonoBehaviour
             SaveProgress(false,0,0,false);
         }
     }
+
+    public bool Completed()
+    {
+        return levelComplete;
+    }
 }
 
 [System.Serializable]
