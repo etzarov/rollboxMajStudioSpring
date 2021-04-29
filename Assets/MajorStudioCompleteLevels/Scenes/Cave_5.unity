@@ -489,20 +489,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b23b066eefbb194abdecc5c0569343a, type: 3}
---- !u!1 &247821378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1443992544183970026, guid: 5b23b066eefbb194abdecc5c0569343a,
-    type: 3}
-  m_PrefabInstance: {fileID: 247821377}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &247821379
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247821378}
-  m_Mesh: {fileID: 0}
 --- !u!1001 &257793955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2358,7 +2344,7 @@ Transform:
   m_LocalScale: {x: 1.4108, y: 1.4108, z: 1.4108}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1603709232
 SpriteRenderer:
@@ -3494,7 +3480,7 @@ Transform:
   - {fileID: 856999124}
   - {fileID: 742526309}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2748859394828031550
 GameObject:
@@ -4176,7 +4162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76658520b2c2b1740a8b47b9f0410486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisLevel: {fileID: 11400000, guid: 0c641d8915c5f68489ed159ba91f7aee, type: 2}
+  thisLevel: {fileID: 11400000, guid: 602644056093e444887f3742d5a0ad3c, type: 2}
   generalPalette: {fileID: 11400000, guid: 7497609d37f422b44912eb40272449d4, type: 2}
   totalCratesDropped: 0
   mustReset: 0

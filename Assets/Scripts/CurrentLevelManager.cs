@@ -48,6 +48,12 @@ public class CurrentLevelManager : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.P) || ExtensionMethods.TouchedHitbox(homeButton))
+        {
+            LevelCompleted();
+
+        }
+
 
 
         resetDisplay.enabled = mustReset;

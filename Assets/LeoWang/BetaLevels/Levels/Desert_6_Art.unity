@@ -6433,7 +6433,7 @@ PrefabInstance:
     - target: {fileID: 5803948776949199490, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5803948776949199516, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
         type: 3}
@@ -11855,6 +11855,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1081097873273349535, guid: c85067aad98153d40bdb6f6ed0580602,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6553682477891010612, guid: c85067aad98153d40bdb6f6ed0580602,
         type: 3}
       propertyPath: buttonPressed
