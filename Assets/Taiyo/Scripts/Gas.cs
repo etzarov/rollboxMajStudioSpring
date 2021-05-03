@@ -24,15 +24,11 @@ public class Gas : MonoBehaviour
 
     private void Update()
     {
-        if (!killplayer)
+        if (!killplayer || CurrentLevelManager.main.Completed())
             return;
         
         if(deathtimer > 0)
         {
-            if (CurrentLevelManager.main.Completed())
-            {
-                deathtimer = 10000;
-            }
             audiotimer -= Time.deltaTime;
             if (audiotimer <= 0 && !myaudio.isPlaying) {
                 audiotimer = audiospan;

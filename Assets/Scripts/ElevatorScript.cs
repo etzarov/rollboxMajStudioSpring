@@ -119,7 +119,8 @@ public class ElevatorScript : MonoBehaviour
     //Added by Taiyo Baniecki for TNT Crate Explosion
     public void DestroySelf()
     {
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
+       // Destroy(this.gameObject);
     }
 }
 
