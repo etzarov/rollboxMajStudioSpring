@@ -6894,7 +6894,7 @@ PrefabInstance:
     - target: {fileID: 1726601871029623973, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
       propertyPath: PlatEnd.x
-      value: -5.81
+      value: -3.98
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623973, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
@@ -6916,10 +6916,20 @@ PrefabInstance:
       propertyPath: PlatStart.y
       value: 2.05
       objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029623973, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: retractsWhenTurnedOff
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623975, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029623975, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.975
       objectReference: {fileID: 0}
     - target: {fileID: 1726601871029623975, guid: 5ff14a7e58023cd449d7b8f955860fc1,
         type: 3}
