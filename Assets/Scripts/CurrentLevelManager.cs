@@ -12,11 +12,10 @@ public class CurrentLevelManager : MonoBehaviour
     public int totalCratesDropped;
     [Space]
     public bool mustReset;
-    private float resetTimer = 2.0f;
     public SpriteRenderer resetDisplay;
 
     public bool levelComplete;
-    public Transform levelCompleteDisplay;
+    public LevelCompleteDisplay levelCompleteDisplay;
 
     public TNTScript tnt;
     public ButtonScript button;
@@ -49,28 +48,34 @@ public class CurrentLevelManager : MonoBehaviour
 
         }
 
-        if (levelComplete)
+        if (Input.GetKeyDown(KeyCode.P) || ExtensionMethods.TouchedHitbox(homeButton))
         {
-            if (ExtensionMethods.TouchedHitbox(nextLevelButton))
-            {
-                if (TransitionManager.main != null)
-                {
-                    TransitionManager.main.Transition();
-                }
-                SceneManager.LoadScene(thisLevel.nextLevel.buildSceneNumber);
-            }
+            LevelCompleted();
+
         }
 
+
+
         resetDisplay.enabled = mustReset;
-        if (mustReset)
+        //levelCompleteDisplay.gameObject.SetActive(levelComplete);
+    }
+
+    public void GoToMenu()
+    {
+        if (TransitionManager.main)
         {
-            resetTimer -= Time.deltaTime;
-            if(resetTimer <= 0)
-            {
-                ResetGame();
-            }
+            TransitionManager.main.Transition();
         }
-        levelCompleteDisplay.gameObject.SetActive(levelComplete);
+        SceneManager.LoadScene(0);
+    }
+
+    public void GoToNextLevel()
+    {
+        if (TransitionManager.main != null)
+        {
+            TransitionManager.main.Transition();
+        }
+        SceneManager.LoadScene(thisLevel.nextLevel.buildSceneNumber);
     }
 
     public void ResetGame()
@@ -106,6 +111,7 @@ public class CurrentLevelManager : MonoBehaviour
 
         mustReset = false;
         levelComplete = false;
+        levelCompleteDisplay.gameObject.SetActive(false);
     }
 
     public void AddCrate()
@@ -119,6 +125,7 @@ public class CurrentLevelManager : MonoBehaviour
 
     public void LevelCompleted()
     {
+        int totalStars = 0;
         if (!levelComplete)
         {
             if (FireworkManager.main!=null)
@@ -126,9 +133,11 @@ public class CurrentLevelManager : MonoBehaviour
                 FireworkManager.main.LaunchParticles();
             }
 
+            
+
             levelComplete = true;
             thisLevel.levelCompletionData.completed = true;
-            int totalStars = GetStars(thisLevel.levelCompletionData.cratesUsed);
+             totalStars = GetStars(thisLevel.levelCompletionData.cratesUsed);
             int droppedCrates = thisLevel.levelCompletionData.cratesUsed;
             if (totalCratesDropped < thisLevel.levelCompletionData.cratesUsed)
             {
@@ -143,8 +152,12 @@ public class CurrentLevelManager : MonoBehaviour
                 droppedCrates = totalCratesDropped;
             }
 
+            
+
             SaveProgress(true, droppedCrates, totalStars,true);
         }
+        levelCompleteDisplay.gameObject.SetActive(true);
+        levelCompleteDisplay.SetLevelComplete(GetStars(totalCratesDropped));
     }
 
     int GetStars(int cratesDropped)

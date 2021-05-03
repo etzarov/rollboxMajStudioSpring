@@ -804,6 +804,12 @@ PrefabInstance:
       propertyPath: m_LocalAABB.m_Extent.z
       value: 0.0001
       objectReference: {fileID: 0}
+    - target: {fileID: 5803948775659469145, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
+        type: 3}
+      propertyPath: thisLevel
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c641d8915c5f68489ed159ba91f7aee,
+        type: 2}
     - target: {fileID: 5803948775880556689, guid: e5d43f16d95dd17409cfe9fd76b99b9b,
         type: 3}
       propertyPath: m_LocalPosition.x

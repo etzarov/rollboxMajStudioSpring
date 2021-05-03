@@ -120,6 +120,10 @@ public class TNTScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "conveyor")
+        {
+            return;
+        }
         Rigidbody2D collisionRB = collision.gameObject.GetComponent<Rigidbody2D>();
 
         if (collisionRB && collision.gameObject.layer != 13)
