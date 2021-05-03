@@ -81,16 +81,7 @@ public class TNTScript : MonoBehaviour
 
         Vector3 p = this.transform.position;
 
-        foreach(CrateInfo co in cos)
-        {
-            if (Vector3.Distance(co.transform.position,p) < dist)
-            {
-                co.BreakCrate(false);
-                co.DestroySelf();
-            }
-        }
-
-
+        CrateSpawner.main.TNTExplosion(p, dist);
 
         //For elevator deletion
         ElevatorScript[] eos;

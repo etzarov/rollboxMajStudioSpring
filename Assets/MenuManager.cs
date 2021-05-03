@@ -5,6 +5,8 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager main;
+    public static bool hasLoadedOnce;
+    public static Vector3 cameraPos;
 
     public ButtonScript settingsButton;
     public ButtonScript playButton;
@@ -73,10 +75,23 @@ public class MenuManager : MonoBehaviour
     {
         targetState = currentState;
         SettingsLoad();
+
+
+        //load back to levelMap
+        if (hasLoadedOnce)
+        {
+            currentState = MenuState.LevelSelect;
+            targetState = MenuState.LevelSelect;
+            menuMusicManager.currentHeight = cameraPos.y;
+            Camera.main.transform.position = cameraPos;
+            
+        }
+        hasLoadedOnce = true;
     }
 
     void Update()
     {
+        cameraPos = Camera.main.transform.position;
         if (!inStateChange)
         {
             if (settingsButton.buttonPressed)
