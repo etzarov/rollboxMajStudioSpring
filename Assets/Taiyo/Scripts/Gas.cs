@@ -24,7 +24,7 @@ public class Gas : MonoBehaviour
 
     private void Update()
     {
-        if (!killplayer)
+        if (!killplayer || CurrentLevelManager.main.Completed())
             return;
         
         if(deathtimer > 0)

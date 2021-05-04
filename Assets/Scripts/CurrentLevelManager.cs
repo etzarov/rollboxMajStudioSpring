@@ -48,6 +48,12 @@ public class CurrentLevelManager : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.P) || ExtensionMethods.TouchedHitbox(homeButton))
+        {
+            LevelCompleted();
+
+        }
+
 
 
         resetDisplay.enabled = mustReset;
@@ -208,6 +214,11 @@ public class CurrentLevelManager : MonoBehaviour
 
             SaveProgress(false,0,0,false);
         }
+    }
+
+    public bool Completed()
+    {
+        return levelComplete;
     }
 }
 
