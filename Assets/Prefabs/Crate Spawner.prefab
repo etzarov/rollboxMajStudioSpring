@@ -48,6 +48,7 @@ MonoBehaviour:
   preventativeColliders:
     serializedVersion: 2
     m_Bits: 32768
+  isMenuSpawner: 0
   cantPlaceColliders:
     serializedVersion: 2
     m_Bits: 4608
@@ -60,10 +61,12 @@ MonoBehaviour:
   heldCrateSensitivity: 0.775
   breakCrateXTransform: {fileID: 4920080174668065014}
   sensitivityLerp: 0.5
+  maxCrateVelocity: 0
   crateOutlineSR: {fileID: 613144181456781031}
   crateOutlineSprites: []
   touchPos: {x: 0, y: 0, z: 0}
   mousePos: {x: 0, y: 0, z: 0}
+  dropDisabled: 0
 --- !u!1 &1367977383538679071
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +166,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: f7ddbc115d4d30c4eb12da17da899381, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
