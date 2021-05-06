@@ -87,7 +87,7 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_6.unity
     guid: 8661f611cbfbecd4da9a0840fc8ce177
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_extra.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Grassy_extra.unity
     guid: 3f6d6d3d23d5baa44b3877a57269c88e
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_8.unity
@@ -129,25 +129,25 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_2.unity
     guid: d700f9f46cb5acc4aa6f3efd7b7e9d2c
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_7.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Grassy_77.unity
     guid: c6dafc8dd858b0f4b808717bb5e3aa33
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_4.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_44.unity
     guid: a257fcf20538ef14f806e8212a00cbe5
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_1.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_11.unity
     guid: 4686f7a5123191f45b696179acf4fdeb
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_5.unity
+    path: Assets/MajorStudioCompleteLevels/Desert_55.unity
     guid: 5201f877bfe43b6439c9efd500923b60
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_7.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_77.unity
     guid: 3e073b0e379bbd04e9294bc6b0d380ca
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_9.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_99.unity
     guid: 05d59cfa7abf7234f817871721f0ce24
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Desert_10.unity
@@ -159,13 +159,13 @@ EditorBuildSettings:
     path: Assets/LeoWang/BetaLevels/Levels/Desert_2_Art.unity
     guid: 457156dfdc0d9384aae374a3da908c84
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_3.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_33.unity
     guid: 359f5345f154e8c48a3cc14053556ffa
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_6.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_6.unity
     guid: 31a1b160e233dc640ba2d97101be78d7
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Desert_8.unity
+    path: Assets/MajorStudioCompleteLevels/ScrapScenes/Desert_88.unity
     guid: c1b6b9b1110adbb4b8e42c2a87b2e968
   - enabled: 1
     path: Assets/Taiyo/Levels/Betalevels/Cave11.unity
