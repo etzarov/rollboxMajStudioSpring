@@ -290,7 +290,7 @@ PrefabInstance:
     - target: {fileID: 1443992544183970022, guid: 5b23b066eefbb194abdecc5c0569343a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.18
+      value: 6.3299975
       objectReference: {fileID: 0}
     - target: {fileID: 1443992544183970022, guid: 5b23b066eefbb194abdecc5c0569343a,
         type: 3}
@@ -326,6 +326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_margin.z
       value: 8.821672
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992544183970027, guid: 5b23b066eefbb194abdecc5c0569343a,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b23b066eefbb194abdecc5c0569343a, type: 3}
@@ -431,6 +436,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elev_Small (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6832841725549825654, guid: 9dcbcc6d69a450741a8580c90f67b6b2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9076881938181398702, guid: a0c498847a3b61143b5d648c1d3226a4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dcbcc6d69a450741a8580c90f67b6b2, type: 3}
 --- !u!4 &98265775 stripped
@@ -1202,6 +1213,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1081097873273349535, guid: 167d62f214dcec34dbdbed8793057c6a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4592b0a86f37a0041a9e02a1e7af8424,
+        type: 3}
+    - target: {fileID: 1081097873273349535, guid: 167d62f214dcec34dbdbed8793057c6a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601125593892724240, guid: 167d62f214dcec34dbdbed8793057c6a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4112bc56e212e7e4387b40ef1e0f680d,
+        type: 3}
+    - target: {fileID: 1601125593892724240, guid: 167d62f214dcec34dbdbed8793057c6a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6553682477891010612, guid: 167d62f214dcec34dbdbed8793057c6a,
         type: 3}
       propertyPath: pressableObjects.m_Bits
@@ -2228,6 +2261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: heldCrateSensitivity
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653290115795039307, guid: 542fa2a8be6425f43906b54210b797bb,
+        type: 3}
+      propertyPath: preventativeColliders.m_Bits
+      value: 36864
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542fa2a8be6425f43906b54210b797bb, type: 3}
@@ -4061,7 +4099,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6679476988190955613, guid: a0c498847a3b61143b5d648c1d3226a4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
