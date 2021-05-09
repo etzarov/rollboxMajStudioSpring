@@ -404,6 +404,35 @@ public class CrateSpawner : MonoBehaviour
         }
     }
 
+    public void TNTExplosion(Vector3 position, float dist)
+    {
+        for (int i = 0; i < allDroppedCrates.Count; i++)
+        {
+            if (allDroppedCrates[i] != null)
+            {
+                if (Vector3.Distance(position, allDroppedCrates[i].transform.position) < dist)
+                {
+                    BreakCrate(allDroppedCrates[i]);
+                }
+            }
+        }
+
+        for (int i = 0; i < initialCrates.Length; i++)
+        {
+            if (initialCrates[i] != null)
+            {
+                if (!initialCratesDisabled[i])
+                {
+                    if (Vector3.Distance(position, initialCrates[i].transform.position) < dist)
+                    {
+                        BreakCrate(initialCrates[i]);
+                    }
+                }
+            }
+        }
+
+    }
+
     #endregion
 
     #region Helper Functions
