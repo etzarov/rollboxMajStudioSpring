@@ -7,6 +7,9 @@ public class Conveyor : MonoBehaviour
 
     [SerializeField] private float speed1 = 2f;
     [SerializeField] private float speed2 = -2f;
+
+    [SerializeField] private Transform conveyorSpriteTransform;
+
     private float speed;
 
     private List<Transform> targetTransform;
@@ -85,11 +88,16 @@ public class Conveyor : MonoBehaviour
         if (bs != null && bs.buttonPressed)
         {
                 speed = speed2;
-           
+                if(conveyorSpriteTransform != null)
+                    conveyorSpriteTransform.localScale = new Vector3(-1, 1, 1);
+
         }
         else
         {
             speed = speed1;
+            if (conveyorSpriteTransform != null)
+                conveyorSpriteTransform.localScale = new Vector3(1, 1, 1);
+
         }
     }
 
@@ -138,7 +146,15 @@ public class Conveyor : MonoBehaviour
     /// </summary>
     public void ChangeDirection()
     {
+        Debug.Log("Pressed ! speed : " + speed);
         speed *= -1;
+        if (speed < 0) {
+            conveyorSpriteTransform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            conveyorSpriteTransform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
 } // class BeltConveyor
