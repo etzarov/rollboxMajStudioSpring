@@ -246,6 +246,9 @@ EditorBuildSettings:
     path: Assets/MajorStudioCompleteLevels/Scenes/Rolling on Dynamite.unity
     guid: 716ee2209a5d9b3448bcba0b77b6ada1
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Back and Forth.unity
+    path: Assets/MajorStudioCompleteLevels/Scenes/Back and Forth_Beta.unity
     guid: 701a7f831ac8a50499a50a4590c731d6
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Back and Forth.unity
+    guid: e98ae82303dbb7c45b1fcc7cea54ab46
   m_configObjects: {}
