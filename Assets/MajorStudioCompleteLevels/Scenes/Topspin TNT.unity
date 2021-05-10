@@ -1059,6 +1059,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &696768099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 615455982358737173, guid: e0beeba0f65daa54b9fa3e865cc0deac,
+    type: 3}
+  m_PrefabInstance: {fileID: 615455983057117392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &831740894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1944,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2530817d688ca2143bd861a469c56c3f, type: 3}
+--- !u!4 &2045620151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5494259002545906866, guid: 8aa920e577276437b8b61385f470f7e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 351842445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2133955978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,8 +2083,13 @@ PrefabInstance:
     - target: {fileID: 615455982358737171, guid: e0beeba0f65daa54b9fa3e865cc0deac,
         type: 3}
       propertyPath: power
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 615455982358737171, guid: e0beeba0f65daa54b9fa3e865cc0deac,
+        type: 3}
+      propertyPath: targetpos
+      value: 
+      objectReference: {fileID: 696768099}
     - target: {fileID: 615455982358737171, guid: e0beeba0f65daa54b9fa3e865cc0deac,
         type: 3}
       propertyPath: explosion1
@@ -2083,6 +2100,11 @@ PrefabInstance:
       propertyPath: explosion2
       value: 
       objectReference: {fileID: 1981579266}
+    - target: {fileID: 615455982358737171, guid: e0beeba0f65daa54b9fa3e865cc0deac,
+        type: 3}
+      propertyPath: explosionpos
+      value: 
+      objectReference: {fileID: 2045620151}
     - target: {fileID: 615455982358737171, guid: e0beeba0f65daa54b9fa3e865cc0deac,
         type: 3}
       propertyPath: timeRemaining

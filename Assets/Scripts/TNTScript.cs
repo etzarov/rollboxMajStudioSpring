@@ -16,6 +16,9 @@ public class TNTScript : MonoBehaviour
 
     public ParticleSystem explosion1;
     public ParticleSystem explosion2;
+    public Transform explosionpos;
+    public Transform targetpos;
+
 
 
 
@@ -50,6 +53,8 @@ public class TNTScript : MonoBehaviour
                 //CraneManagement.main.LaunchCrates(this.transform.position, power);
                 Launch(power);
                 DestoryWhenExplode(explodeDistance);
+                explosionpos.localPosition = this.transform.localPosition;
+                explosionpos.localPosition = targetpos.localPosition;
                 explosion1.Play();
                 explosion2.Play();
                 //Destroy(this.gameObject);

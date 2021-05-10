@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Grassy_6
   m_EditorClassIdentifier: 
   levelZone: 1
-  buildSceneNumber: 21
+  buildSceneNumber: 19
   nextLevel: {fileID: 11400000, guid: 13d673f9e51ff8e428f0ad9f85d0d4e3, type: 2}
   maxCratesFor3Stars: 2
   maxCratesFor2Stars: 3
   levelCompletionData:
     completed: 1
-    cratesUsed: 2
+    cratesUsed: 0
     earnedStars: 3

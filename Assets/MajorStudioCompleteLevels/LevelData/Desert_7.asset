@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Desert_7
   m_EditorClassIdentifier: 
   levelZone: 2
-  buildSceneNumber: 47
+  buildSceneNumber: 64
   nextLevel: {fileID: 11400000, guid: af6532af7d59f2949a913734d3f1d9fc, type: 2}
   maxCratesFor3Stars: 3
   maxCratesFor2Stars: 4
   levelCompletionData:
     completed: 1
-    cratesUsed: 4
-    earnedStars: 2
+    cratesUsed: 0
+    earnedStars: 3

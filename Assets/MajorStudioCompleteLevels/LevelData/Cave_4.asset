@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Cave_4
   m_EditorClassIdentifier: 
   levelZone: 3
-  buildSceneNumber: 55
+  buildSceneNumber: 53
   nextLevel: {fileID: 11400000, guid: 602644056093e444887f3742d5a0ad3c, type: 2}
   maxCratesFor3Stars: 2
   maxCratesFor2Stars: 4
   levelCompletionData:
     completed: 1
-    cratesUsed: 2
+    cratesUsed: 0
     earnedStars: 3

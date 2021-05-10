@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scripts/Scenes/LevelSelect.unity
     guid: 6eb0d7982dc32674fac96003e681242f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Taiyo/Scenes/StageSelectForNow.unity
     guid: 7b362d6dac57af142a8af60ed75c785c
   - enabled: 0
@@ -74,9 +74,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Grassy_3.unity
-    guid: 75b904e55c69b734faaafe5d1c37a3b6
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Ninja Reflexes.unity
     guid: 288196ffcaa51404faf89b1aceb6f145
@@ -212,4 +212,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Rollin Around.unity
     guid: e45277198b726ec4d9130b4af5dced73
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Breaking Box.unity
+    guid: e2b2ebabe455aa34c81a7c0e7b564042
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Fender Bender.unity
+    guid: e458910711f499e449a01826dc391ccf
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Whole Lot of Buttons.unity
+    guid: c15a64748fa58d841b66ee3777ddee2a
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Prickly Predicament.unity
+    guid: 377b797139efb61419c98e32549acde7
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Topspin TNT.unity
+    guid: eea26877d7be96d4a84fcbf8a46d477b
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Cactus Jack Sent Me.unity
+    guid: c25fed28001bf8b46976fe5e6e3e6fda
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Cactus Caution.unity
+    guid: f7a15c184f621794ab40102de831eb91
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/TNT Launcher.unity
+    guid: 2ef6dcb38e96e594792c1f2f4c7521d7
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/TNT Cannon.unity
+    guid: ee44196d3f331aa4390d12216b3efe7b
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Belly of the Beast.unity
+    guid: b558a797d59f9874e8b65eb04441c09e
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Rolling on Dynamite.unity
+    guid: 716ee2209a5d9b3448bcba0b77b6ada1
+  - enabled: 1
+    path: Assets/MajorStudioCompleteLevels/Scenes/Back and Forth.unity
+    guid: 701a7f831ac8a50499a50a4590c731d6
   m_configObjects: {}
