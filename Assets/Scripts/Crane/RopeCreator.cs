@@ -5,8 +5,8 @@ public class RopeCreator : MonoBehaviour
     public Rigidbody2D hook;
     public GameObject ropeLinkObj;
 
-    public CraneManagement craneManagement;
-
+    public GameObject connectorRB;
+    public float distanceToEnd;
     public int linkCount;
 
     void Start()
@@ -26,7 +26,7 @@ public class RopeCreator : MonoBehaviour
 
             if (i >= linkCount - 1)
             {
-                craneManagement.AttachToRopeEnd(newLink.GetComponent<Rigidbody2D>());
+                AttachToRopeEnd(newLink.GetComponent<Rigidbody2D>());
             }
             else
             {
@@ -36,5 +36,22 @@ public class RopeCreator : MonoBehaviour
             
         }
     }
+
+        public void AttachToRopeEnd(Rigidbody2D endRB)
+    {
+        HingeJoint2D joint = connectorRB.AddComponent<HingeJoint2D>();
+        joint.autoConfigureConnectedAnchor = false;
+
+        joint.connectedBody = endRB;
+
+        joint.anchor = Vector2.zero;
+        joint.useLimits = true;
+        JointAngleLimits2D angleLimits = joint.limits;
+        angleLimits.min = -25;
+        angleLimits.max = 25;
+        joint.limits = angleLimits;
+        joint.connectedAnchor = new Vector2(0f, -distanceToEnd);
+    }
+
 
 }
