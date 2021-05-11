@@ -201,10 +201,10 @@ EditorBuildSettings:
     path: Assets/LeoWang/BetaLevels/Levels/Back and Forth_Art.unity
     guid: aef874c73bf94ba42b77622169154fe7
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Noxious Gas.unity
+    path: Assets/LeoWang/BetaLevels/Levels/Noxious Gas_Art.unity
     guid: c5508375ffa69244bbb38500333591e4
   - enabled: 1
-    path: Assets/MajorStudioCompleteLevels/Scenes/Propel the Toxins.unity
+    path: Assets/LeoWang/BetaLevels/Levels/Propel the Toxins_Art.unity
     guid: 7a3bb44213f9cc149aadfc9ac68b1f59
   - enabled: 1
     path: Assets/MajorStudioCompleteLevels/Scenes/Fancy Footwork.unity
