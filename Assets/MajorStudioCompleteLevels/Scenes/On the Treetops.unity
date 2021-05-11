@@ -492,6 +492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elev_Small Middle
       objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029624025, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff14a7e58023cd449d7b8f955860fc1, type: 3}
 --- !u!1001 &120774747
@@ -1418,6 +1423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elev_Small
       objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029624025, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff14a7e58023cd449d7b8f955860fc1, type: 3}
 --- !u!1 &377423495
@@ -1915,6 +1925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Elev_Small Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029624025, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff14a7e58023cd449d7b8f955860fc1, type: 3}
@@ -12700,6 +12715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Elev_Small left
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726601871029624025, guid: 5ff14a7e58023cd449d7b8f955860fc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff14a7e58023cd449d7b8f955860fc1, type: 3}
