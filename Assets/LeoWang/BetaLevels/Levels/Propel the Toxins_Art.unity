@@ -2000,6 +2000,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyorBelt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4955168428629822287, guid: 605bacef39a2f6741930d53b4f9a4304,
+        type: 3}
+      propertyPath: speed
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605bacef39a2f6741930d53b4f9a4304, type: 3}
 --- !u!1001 &1999187777
@@ -2255,7 +2260,7 @@ PrefabInstance:
     - target: {fileID: 1443992544183970022, guid: 5b23b066eefbb194abdecc5c0569343a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.21
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1443992544183970022, guid: 5b23b066eefbb194abdecc5c0569343a,
         type: 3}
@@ -2281,6 +2286,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SceneNameText (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992544183970027, guid: 5b23b066eefbb194abdecc5c0569343a,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 7.7402115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992544183970027, guid: 5b23b066eefbb194abdecc5c0569343a,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b23b066eefbb194abdecc5c0569343a, type: 3}
